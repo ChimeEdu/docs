@@ -39,7 +39,7 @@
             "pages": [
               "teachers/classrooms/overview",
               "teachers/classrooms/create-classroom",
-              "teachers/classrooms/enrol-students",
+              "teachers/classrooms/enroll-students",
               "teachers/classrooms/google-drive"
             ]
           },
@@ -66,8 +66,7 @@
             "group": "AI Tools",
             "pages": [
               "teachers/ai/overview",
-              "teachers/ai/study-guide-drafting",
-              "teachers/ai/fill-in-the-blank-authoring"
+              "teachers/ai/study-guide-drafting"
             ]
           }
         ]
@@ -131,5 +130,17 @@
     "ga4": {
       "measurementId": "G-767QR52HMY"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/teachers/ai/fill-in-the-blank-authoring",
+      "destination": "/teachers/ai/overview",
+      "permanent": true
+    },
+    {
+      "source": "/teachers/classrooms/enrol-students",
+      "destination": "/teachers/classrooms/enroll-students",
+      "permanent": true
+    }
+  ]
 }

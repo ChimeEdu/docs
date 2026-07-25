@@ -1,58 +1,72 @@
 ---
-title: "Draft Study Guides Faster with ChimeEdu AI Assistance"
+title: "Draft Study Guides Faster with ChimeEdu AI"
 sidebarTitle: "Study Guide AI"
-description: "Use ChimeEdu's AI to turn your notes and curriculum materials into a structured study guide draft — then edit it before publishing."
+description: "Use ChimeEdu's AI to draft a study guide from a prompt and your own source files — streamed into the guide, then edited by you."
 ---
 
-The Study Guide AI assistant takes content you paste in and helps scaffold it into a structured, student-ready draft. Instead of starting from a blank page, you start from your own material — and the AI helps you shape it into something your students can navigate and study from effectively.
+ChimeEdu's AI drafting turns a short brief — plus any source files you upload — into structured study guide sections. It's the fastest way to get a first draft on the page; the shaping and checking are still yours.
 
 <Note>
-  AI-assisted Study Guide drafting requires a **Premium** account. Powered by Claude. [View pricing](https://app.chimeedu.com/pricing).
+  AI drafting is available on **Premium** accounts (and Administrator / Super Administrator accounts). It is powered by Claude.
 </Note>
 
-## Using AI to draft a Study Guide
+## Drafting a guide
 
 <Steps>
-  <Step title="Open or create a Study Guide">
-    From your classroom dashboard, open an existing Study Guide or create a new one.
+  <Step title="Open a study guide and choose Generate with AI">
+    The button sits with the other actions on the study guide page. On plans without access it appears as **AI (Premium)**.
   </Step>
-  <Step title="Click Generate with AI">
-    Select the **Generate with AI** option in the Study Guide editor toolbar.
+
+  <Step title="Describe what you want">
+    Write a brief in the prompt box — for example, *"A revision guide on photosynthesis for Year 9, covering the reaction, limiting factors, and required practicals."* There are also starter suggestions to work from: chapter summary, review guide, key concepts, practice questions, and compare & contrast.
   </Step>
-  <Step title="Paste in your source material">
-    Paste in your notes, a curriculum document, or a textbook excerpt. The more context you provide, the better the draft.
+
+  <Step title="Add source material (optional)">
+    Upload notes, curriculum documents, or reading for the AI to work from — up to 50,000 characters per file and 500,000 characters across all files. You can also paste source text directly into the prompt.
   </Step>
-  <Step title="Review the AI-generated structure and content">
-    The AI will return a draft with suggested headings, sections, and expanded content. Read through the full draft before making any changes.
+
+  <Step title="Choose how it lands">
+    Decide whether the generated content should be **added to** what's already in the guide or **replace** it, then generate. Sections stream in live so you can watch the draft build.
   </Step>
-  <Step title="Edit, add, remove, and refine">
-    Use the full rich text editor to adjust the AI's output. Add your own examples, remove anything that doesn't fit, and rewrite sections to match your voice and curriculum.
+
+  <Step title="Refine">
+    Not quite right? Send a follow-up instruction to adjust the draft, or regenerate an individual section on its own without touching the rest.
   </Step>
-  <Step title="Publish when ready">
-    Once you're satisfied with the guide, publish it to your classroom. It will appear immediately in your enrolled students' activity feeds.
+
+  <Step title="Edit, then publish">
+    Read the draft properly and edit it with the normal block editor. When you're happy, publish the guide to make it available to your linked classrooms.
   </Step>
 </Steps>
 
-## What the AI does
+## What you get back
 
-The Study Guide AI is focused on structure and clarity. Specifically, it:
+A flat sequence of heading-and-paragraph sections — typically three to six — added into your guide as ordinary blocks. From there they behave like anything else you've written: editable, reorderable, and mixable with images, videos, callouts, and tables.
 
-- **Suggests section headings** — it reads your pasted content and proposes a logical hierarchy of topics and subtopics.
-- **Expands bullet points into paragraphs** — short notes become readable, student-friendly prose.
-- **Organises content into hierarchical sections** — related ideas are grouped together so students can navigate complex topics without losing their place.
+<Warning>
+  **Check the draft before you rely on it.** The AI can generate content from your prompt alone, so it is not limited to the material you upload and it can state things that are wrong or that you didn't intend to teach. Treat every draft as a starting point to verify, not a finished resource.
+</Warning>
 
-<Tip>
-  Paste in multiple sources at once — for example, your own lesson notes alongside a relevant curriculum document — for a more complete and well-rounded draft.
-</Tip>
+## Two things to know about saving
 
-## What the AI doesn't do
+* **There is no pending-draft step.** Generated sections are saved into the guide as they complete — there's no separate inbox of suggestions to accept or dismiss one by one. If you don't want what you got, edit or delete the blocks, or regenerate.
+* **Publishing is still a deliberate action.** Generating never publishes a guide. But if the guide is *already* published and linked to a classroom, new AI content is visible to students as soon as it saves. Draft in an unpublished guide when you want to review first.
 
-It's equally important to know the AI's limits:
+## Usage limits
 
-- **It doesn't invent facts.** The AI only works from the content you paste in. It will not add information, statistics, or claims that weren't in your source material.
-- **It doesn't publish automatically.** Nothing is sent to students without your explicit action. You always review and publish.
-- **It doesn't replace your judgement.** The draft is a starting point. You decide what's accurate, appropriate, and pedagogically sound for your students.
+Ten generations per hour, per account. Follow-up refinements and section regenerations count toward the same allowance. Your remaining quota is shown in the AI panel, and it resets on a rolling hourly basis.
 
-<Note>
-  You can **Accept** or **Dismiss** individual AI suggestions inline within the editor — you don't have to accept or reject the entire draft at once.
-</Note>
+## Frequently asked
+
+<AccordionGroup>
+  <Accordion title="Does the AI keep my source material?">
+    ChimeEdu doesn't store what you submit — only usage metadata (model, token counts, success or failure) is logged. The generated output is stored, because it's saved into your guide.
+  </Accordion>
+
+  <Accordion title="Can I use AI on other activity types?">
+    No. Study guides are the only place AI authoring is available — quizzes, fill-in-the-blank activities, and assessments are authored manually.
+  </Accordion>
+
+  <Accordion title="Can I write a study guide without AI?">
+    Yes, entirely. AI drafting is optional and the block editor does everything on its own.
+  </Accordion>
+</AccordionGroup>

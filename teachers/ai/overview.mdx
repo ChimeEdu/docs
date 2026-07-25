@@ -1,41 +1,33 @@
 ---
 title: "AI-Powered Authoring Tools for Teachers on ChimeEdu"
 sidebarTitle: "Overview"
-description: "ChimeEdu's AI tools help teachers draft study guides and fill-in-the-blank activities faster — powered by Claude, available on Premium."
+description: "ChimeEdu's AI drafts study guides from your prompt and uploaded source material — powered by Claude, available on Premium."
 ---
 
-ChimeEdu includes optional AI tools to help you draft content faster. The AI works from your materials — not from scratch. You paste in your notes, curriculum documents, or textbook excerpts, and the AI helps shape them into structured, student-ready drafts. You stay in control at every step.
-
-## What AI tools are available
-
-ChimeEdu currently offers AI assistance in two authoring workflows:
-
-- **AI-assisted Study Guide drafting** — paste in your source material and let the AI suggest structure, headings, and expanded content for your study guide.
-- **AI-assisted Fill-in-the-Blank authoring** — paste in a passage and let the AI recommend which words to blank out, with an explanation for each suggestion.
+ChimeEdu includes one optional AI tool: **AI-assisted Study Guide drafting**. You describe what you need, optionally upload source material, and the AI drafts headings and sections into your study guide — which you then edit before students see it.
 
 <Note>
-  AI tools require a **Premium** account. Both tools are powered by Claude. [View pricing](https://app.chimeedu.com/pricing) to compare plans.
+  AI drafting requires a **Premium** account (Administrator and Super Administrator accounts also have access). It is powered by Claude. [View pricing](https://app.chimeedu.com/pricing) to compare plans.
 </Note>
 
-## The ChimeEdu AI philosophy
+## What's available today
 
-ChimeEdu's AI is designed as scaffolding, not a replacement. Here's what that means in practice:
-
-- **You bring the content, AI helps structure it.** The AI never invents information. It works only from the material you provide — your notes, your curriculum, your words.
-- **You stay the author, AI is the editor.** Every suggestion the AI makes is a draft for you to review, edit, and approve. Nothing reaches students without your sign-off.
-- **AI assistance is always optional.** Every AI feature has a manual path. You can author and publish any activity or study guide without using AI at all.
-
-## AI authoring tools
-
-<CardGroup cols={2}>
+<CardGroup cols={1}>
   <Card title="Study Guide Drafting" icon="book-open" href="/teachers/ai/study-guide-drafting">
-    Paste in your notes or curriculum materials and let the AI scaffold them into a structured, student-ready study guide draft — then edit before publishing.
-  </Card>
-  <Card title="Fill-in-the-Blank Authoring" icon="pencil" href="/teachers/ai/fill-in-the-blank-authoring">
-    Let the AI suggest which words in your passage are the best candidates for blanks, with explanations for why each choice tests a key concept.
+    Describe the guide you want, optionally upload notes or curriculum files, and watch the draft stream into your study guide section by section.
   </Card>
 </CardGroup>
 
+Study guides are the only place AI authoring is available. Quizzes, maps, timelines, flash cards, fill-in-the-blank activities, and assessments are all authored manually — there is no AI question generation or blank suggestion on ChimeEdu today.
+
+## How it works in practice
+
+* **It works from your prompt, and from files if you add them.** You can write a prompt on its own ("Create a revision guide on the water cycle for Year 8"), or upload source material for the AI to work from — up to 50,000 characters per file and 500,000 characters in total. Because a prompt alone is enough, the AI can and will generate content that wasn't in any source you provided. Read the draft before you rely on it.
+* **The draft lands directly in your study guide.** Generated sections are saved into the guide as they complete — there is no separate "pending draft" you approve first. You can append to existing content, replace it, or regenerate an individual section.
+* **Watch out on already-published guides.** If the guide is published and linked to a classroom, saved AI content is visible to students immediately. Draft in an unpublished guide first if you want a review step.
+* **There is a usage limit.** Ten generations per hour, per account. Your remaining quota is shown in the AI panel.
+* **AI is always optional.** Every study guide can be written, formatted, and published entirely by hand.
+
 ## Privacy and your content
 
-When you use an AI tool on ChimeEdu, the content you paste in is sent to the AI model solely to generate your draft or suggestions. Your content is **not** used to train AI models, and it is **not** stored or shared beyond that individual request.
+The prompt and any files you upload are sent to Anthropic's Claude API to generate your draft. ChimeEdu does **not** keep the material you submit — the usage log records only metadata (the model used, token counts, and whether the request succeeded). The generated content is stored, because it is saved into your study guide by design. Your most recent prompt is also kept in your browser's session storage so the panel can restore it if you reload the page.
