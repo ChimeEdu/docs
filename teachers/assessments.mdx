@@ -1,95 +1,107 @@
 ---
 title: "Create and Manage Assessments in Your ChimeEdu Classroom"
 sidebarTitle: "Assessments"
-description: "Build auto-graded assessments with multiple question types, timers, and real-time submission tracking for your ChimeEdu classroom."
+description: "Build auto-graded ChimeEdu assessments with five question types, timers, and password access — and review submissions as they arrive."
 ---
 
-Assessments let you build comprehensive tests with multiple question types and publish them directly to your classroom. Objective questions are auto-graded the moment a student submits — no marking pile, no batch processing. You open a dashboard of results while students see their scores in real time.
+Assessments are ChimeEdu's tool for formal, recorded work. Unlike a live quiz, an assessment is taken independently by each student and every submission is stored for you to review afterwards.
 
-## Question Types
+## Question types
 
-Mix and match any of the following question types within a single assessment:
+There are five:
 
-<CardGroup cols={2}>
-  <Card title="Multiple Choice" icon="circle-dot">
-    Present students with a question and a set of answer options. Auto-graded on submission.
-  </Card>
-  <Card title="True / False" icon="toggle-on">
-    A focused, binary question format. Auto-graded on submission.
-  </Card>
-  <Card title="Matching" icon="arrow-right-arrow-left">
-    Ask students to pair items from two columns. Auto-graded on submission.
-  </Card>
-  <Card title="Short Answer" icon="pen-line">
-    Students type a brief response. Flagged for your review after submission.
-  </Card>
-  <Card title="Long-Form Written Response" icon="file-lines">
-    Extended written answers with full context visible in your review queue.
-  </Card>
-</CardGroup>
+| Type                        | Auto-graded | Notes                        |
+| --------------------------- | ----------- | ---------------------------- |
+| **Multiple Choice**         | Yes         | Up to 6 options              |
+| **True/False**              | Yes         |                              |
+| **Image Select**            | Yes         | Up to 4 images in a 2×2 grid |
+| **Short Answer**            | No          | Free-text response           |
+| **Long Answer (Rich Text)** | No          | Formatted extended response  |
 
-## Creating an Assessment
+<Warning>
+  **Written questions cannot currently be given a score.** Short Answer and Long Answer responses are not auto-graded, and there is no way for you to award points to them — you can leave comments on a response and overall feedback on the submission, but the points stay at zero while the question still counts toward the total. An assessment that mixes written and objective questions will therefore always report less than 100%. Until this changes, either keep written questions in **submission-only** assessments, or treat the reported percentage as covering the objective questions alone.
+</Warning>
+
+## Building an assessment
 
 <Steps>
-  <Step title="Open New Assessment">
-    From your teacher dashboard, click **New Assessment** to open the assessment builder.
+  <Step title="Create it">
+    From your dashboard choose **New Assessment**, give it a title and description, and optionally add a featured image or icon.
   </Step>
+
+  <Step title="Set a password">
+    Every assessment has a password — it's required, not optional. Students enter it before they can begin, so share it when you're ready for them to start.
+  </Step>
+
+  <Step title="Choose how it's scored">
+    **Grade & score** runs the auto-grader on objective questions when a student submits. **Submission only** collects responses without scoring — the better fit for reflective or written work.
+  </Step>
+
   <Step title="Add your questions">
-    Add as many questions as you need — mix and match question types freely within the same assessment.
+    Mix the five types freely. Each question can carry images, and you set its point value.
   </Step>
-  <Step title="Configure timing (optional)">
-    Set an overall time limit for the whole assessment, or configure individual per-question timers. Students see a live countdown as they work.
+
+  <Step title="Set timing">
+    You can set an **overall time limit** in minutes, which auto-submits when it expires, and/or a **per-question limit** in seconds, which moves the student on automatically. You can also require the assessment be completed in one sitting.
   </Step>
-  <Step title="Add a featured image or icon (optional)">
-    Attach a featured image or choose an icon to make the assessment easy to identify in the student feed.
-  </Step>
-  <Step title="Review in preview mode">
-    Toggle the assessment into preview mode to check layout, question order, and answer options before anyone else sees it.
-  </Step>
-  <Step title="Publish to your classroom">
-    Set visibility to **Published** to push the assessment to every enrolled student's feed instantly.
+
+  <Step title="Preview, then publish">
+    Preview runs the whole assessment without creating a submission. Publishing lists it in the **Assessments** tab of any classroom you've linked.
   </Step>
 </Steps>
 
 <Note>
-  Students receive both an email notification and an on-platform notification when you publish an assessment. They won't miss it.
+  Publishing doesn't notify anyone — there's no email or in-app alert to students. Tell your class it's ready, and share the password.
 </Note>
 
-## Auto-Grading
+## How students take it
 
-Objective questions — **multiple choice**, **true/false**, and **matching** — are graded the instant a student clicks submit. Results appear in your submission dashboard in real time; there is nothing you need to do to trigger scoring.
+Students open the assessment, enter the **password**, then enter their **first and last name** (optionally an email address and a student ID), and begin.
 
-Written responses (**short answer** and **long-form**) are placed in a separate review queue. You can annotate each response and release written-response scores independently, at whatever pace suits your workflow.
+<Warning>
+  Identity is self-reported. Submissions are not linked to ChimeEdu student accounts or to classroom enrollment — a student types their name, and that name is what appears on the submission. Ask your class to use a consistent format so you can match submissions to your roster.
+</Warning>
+
+Students can **Pause** to save progress and return later, unless you've required one sitting. If they close the tab without pausing, unsaved answers on the current question are lost, though reopening the assessment resumes their saved progress.
+
+## Reviewing submissions
+
+The assessment page lists submissions with a status of **In progress**, **Submitted**, or **Graded**. Open one to see the student's answers, add a comment on any individual response, and leave overall feedback — which does appear to the student.
+
+You can export the submission list to CSV for your own records or gradebook.
 
 <Note>
-  Students see their score immediately for objective questions. Written-response scores are only released to students after you complete your review.
+  The submission list doesn't update by itself — refresh the page to pull in new arrivals. And because submissions only exist once a student has started, there's no "not yet started" list to check against your roster.
 </Note>
 
-## Submission Tracking
+## Accessibility and accommodations
 
-Your submission dashboard gives you a live view of the entire class as the assessment runs:
+Students with **extended time** enabled on their roster entry get triple the time on **per-question** timers.
 
-- **Submitted** — students who have completed and handed in their assessment.
-- **In progress** — students currently working through questions.
-- **Not started** — students who have not yet opened the assessment.
+<Warning>
+  Two limits to plan around: extended time does **not** apply to the overall assessment timer, and it only applies to students who are **signed in** — because the flag lives on their account. A student who takes an assessment without signing in won't get their accommodation. Ask students entitled to extra time to sign in before starting, and prefer per-question timers when accommodations matter.
+</Warning>
 
-Every submission is timestamped and tied to the student's classroom record, so you have a full audit trail without any extra admin.
+## Frequently asked
 
-## Per-Question Analytics
+<AccordionGroup>
+  <Accordion title="Can students see their score?">
+    Not in ChimeEdu. After submitting, a student sees a confirmation screen with your confirmation message and any overall feedback you've left — but no score or per-question breakdown, and there's no way for them to return and review right and wrong answers. Share results yourself if students need them.
+  </Accordion>
 
-Once submissions close, ChimeEdu calculates per-question performance across the whole cohort. You can see at a glance which questions had the lowest average scores — pinpointing exactly where students are struggling before you plan your next lesson.
+  <Accordion title="Is there a matching question type?">
+    No. The five types listed above are the complete set.
+  </Accordion>
 
-## Assessment Settings
+  <Accordion title="Are there per-question analytics?">
+    Not currently. You can see each submission individually and export the list to CSV, but ChimeEdu doesn't calculate class-wide per-question statistics.
+  </Accordion>
 
-<CardGroup cols={2}>
-  <Card title="Flexible Timing" icon="clock">
-    Apply a single time limit to the whole assessment, or set individual timers per question. Both options show students a live countdown.
-  </Card>
-  <Card title="Google Drive Attachments" icon="google-drive">
-    Attach supporting files or resource folders from your institution's Google Drive directly to an assessment. Available on **Plus** and **Premium** plans.
-  </Card>
-</CardGroup>
+  <Accordion title="Who can open a published assessment?">
+    Anyone with the classroom URL can see it listed, and anyone with the assessment password can take it. Enrollment isn't checked — the password is the access control.
+  </Accordion>
 
-<Tip>
-  Use per-question timers when you want to control the pace of a high-stakes test, and a single overall timer for more open-ended assessments where question order is flexible.
-</Tip>
+  <Accordion title="Do assessments count toward my plan limit?">
+    Yes. Your plan's limit covers activities and assessments together.
+  </Accordion>
+</AccordionGroup>

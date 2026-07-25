@@ -1,101 +1,93 @@
 ---
 title: "Create Auto-Graded Fill-in-the-Blank Cloze Activities"
 sidebarTitle: "Fill-in-the-Blank"
-description: "Build auto-graded cloze exercises on ChimeEdu. Students complete blanks in a passage — with optional hints, answer variants, and AI authoring."
+description: "Build auto-graded cloze passages on ChimeEdu — insert numbered blanks, accept answer variants, add hints, and set per-blank points."
 ---
 
-Fill-in-the-Blank activities are cloze-style exercises where students complete missing words or phrases in a passage you write. Answers are auto-graded the moment students submit — no manual marking required. You stay in control of exactly which words are blanked, how lenient the marking is, and whether students can access hints.
+A fill-in-the-blank activity is a passage with gaps for students to complete. Answers are graded automatically the moment a student submits, and each blank can accept several forms of the same answer.
 
-## Key features
+<Note>
+  In the app this activity type is labeled **Fill in the Blank**.
+</Note>
 
-<CardGroup cols={2}>
-  <Card title="Auto-grading" icon="bolt">
-    Every submission is scored instantly. Results appear in your gradebook the moment a student clicks Submit — no waiting, no tallying.
-  </Card>
-  <Card title="Answer variants" icon="shuffle">
-    Define multiple acceptable answers per blank to handle synonyms, common spelling variants, and partial matches without penalising correct thinking.
-  </Card>
-  <Card title="Optional hints" icon="lightbulb">
-    Attach a hint to any blank. Students can choose to reveal it if they're stuck — and you decide whether using a hint deducts points.
-  </Card>
-  <Card title="Per-blank analytics" icon="chart-bar">
-    After submission, see a breakdown of which blanks tripped students up most. Identify concepts that need re-teaching before moving on.
-  </Card>
-  <Card title="Rich passage formatting" icon="text">
-    Write passages with headers, images, bold and italic text — no need to strip your source material down to plain text.
-  </Card>
-  <Card title="AI-assisted authoring" icon="wand-magic-sparkles">
-    Paste a passage and let ChimeEdu AI suggest which words to blank out, with explanations for each choice. Available on Premium plans.
-  </Card>
-</CardGroup>
-
-## Creating a Fill-in-the-Blank activity
+## Building a passage
 
 <Steps>
-  <Step title="Open New Activity">
-    From your classroom dashboard, click **New Activity** and select **Fill-in-the-Blank** from the activity type list.
+  <Step title="Create the activity">
+    From your dashboard choose **New Activity**, then **Fill in the Blank**. Pick a classroom, or leave it as a temporary activity.
   </Step>
+
   <Step title="Write or paste your passage">
-    Type your passage directly into the editor, or paste in text from an existing document. Use the formatting toolbar to add headers, images, bold text, or any other rich formatting your passage needs.
+    Use the passage editor to write the text. You can format with **bold**, *italic*, underline, links, and bulleted or numbered lists.
   </Step>
-  <Step title="Select words or phrases to blank">
-    Highlight any word or phrase in the passage and click **Make Blank**. The selected text becomes a blank that students must complete. Repeat for each term or phrase you want to test.
+
+  <Step title="Insert your blanks">
+    Put the cursor where a gap belongs and choose **Insert blank**. A numbered placeholder appears in the passage.
+
+    <Warning>
+      Inserting a blank does **not** capture the word you've selected — the placeholder is added at the cursor and the text stays as it is. Delete the word you're blanking out yourself, then type its answer in the blanks table (next step).
+    </Warning>
   </Step>
-  <Step title="Configure each blank">
-    Click on any blank to open its settings. From here you can:
-    - Add **answer variants** — alternative acceptable answers for that blank
-    - Add an **optional hint** that students can reveal if they're stuck
+
+  <Step title="Fill in the answers table">
+    Below the passage, each numbered blank gets a row where you enter its **accepted answers**, an optional **hint**, and its **point value**. Separate multiple accepted answers with commas — matching ignores capitalization.
   </Step>
-  <Step title="Set hint point deduction">
-    In the activity settings, choose whether revealing a hint deducts points from that blank's score. You can set a flat deduction or make hints free — the choice is yours per activity.
-  </Step>
-  <Step title="Publish to your classroom">
-    When your activity is ready, click **Publish**. The activity appears immediately in every enrolled student's activity list.
+
+  <Step title="Choose your settings, then save">
+    Set whether to shuffle the passage order, whether hints are available to students, whether to show students their score, and a passing score if you want one. You can also password-protect the activity. Use **Preview** to try it as a student, then **Save passage** and **Save settings**.
   </Step>
 </Steps>
 
-## Answer variants
+<Tip>
+  One activity can hold several passages — use **Add passage** to build a multi-part exercise rather than creating separate activities.
+</Tip>
 
-By default, ChimeEdu grades each blank as correct only if the student's answer exactly matches the text you blanked. Answer variants let you expand what counts as correct — without lowering the standard.
+## How answers are graded
 
-For each blank, you can add as many variants as you need. Common uses include:
+Grading runs server-side as soon as a student submits.
 
-- **Synonyms** — accept "photosynthesis" and "photo-synthesis" for the same blank
-- **Spelling variants** — accept both British and American spellings (e.g. "colour" / "color")
-- **Abbreviations** — accept "DNA" and "deoxyribonucleic acid" for the same blank
-- **Partial matches** — accept a key word even if the student includes minor surrounding text
-
-Variants are case-insensitive by default, so you don't need to add capitalised versions separately.
-
-## Optional hints
-
-Attach a hint to any blank to give students a lifeline if they're stuck. Hints might be a definition, a first letter, a related concept, or any other prompt that helps without giving the answer away.
-
-<Tabs>
-  <Tab title="Without point deduction">
-    Hints are revealed freely, with no impact on the student's score. Use this approach for formative practice where the goal is learning, not assessment.
-  </Tab>
-  <Tab title="With point deduction">
-    Revealing a hint deducts a set number of points from that blank's score. Use this approach for summative tasks where you want to reward students who can recall the answer unaided.
-  </Tab>
-</Tabs>
-
-Students always choose whether to reveal a hint — it is never shown automatically.
-
-## Per-blank analytics
-
-After students submit, ChimeEdu breaks down performance blank by blank. You can see:
-
-- Which blanks had the highest error rate across the class
-- The most common incorrect answers submitted for each blank
-- How many students used a hint on each blank
-
-Use this data to identify the specific concepts — not just the overall score — that need revisiting before your next lesson.
+* **Exact matches** (ignoring capitalization) against any of your accepted answers score full points.
+* **Near misses score 75%.** ChimeEdu automatically allows small spelling slips — roughly one character for short answers, or up to a quarter of the answer's length for longer ones. The student sees *"Close!"* rather than a plain wrong. This tolerance is always on and can't be switched off, so bear it in mind when spelling itself is the thing you're testing.
+* **Everything else** scores zero.
 
 <Note>
-  **AI-assisted authoring** is a Premium-tier feature. If you're on the Free or Plus plan, you can still create Fill-in-the-Blank activities manually — the AI suggestion step is simply unavailable. To upgrade, visit the [Pricing page](https://app.chimeedu.com/pricing).
+  Matching is whole-answer, not partial. An answer with extra words around the target won't be accepted unless it falls inside the spelling tolerance — so if several phrasings are valid, list each one as an accepted answer.
 </Note>
 
-<Tip>
-  You don't need to simplify your source material before pasting it in. ChimeEdu's rich passage editor supports headers, images, and formatted text alongside your blanks — paste your content as-is and format it inside the editor.
-</Tip>
+## Hints
+
+If you add a hint to a blank, students can reveal it themselves from an icon beside that input. Hints are only available when the activity's **show hints** setting is on.
+
+<Note>
+  Using a hint doesn't cost the student any points, and hint usage isn't recorded.
+</Note>
+
+## Seeing student work
+
+<Warning>
+  **There is currently no teacher view for fill-in-the-blank results.** Student submissions are graded and stored, but no screen in the app displays them yet — the activity page shows only the passage and blank counts. If you need to see how students did, have them tell you their score (turn on **show score** so they see it), or use an [assessment](/teachers/assessments) for work you need to review.
+</Warning>
+
+## Frequently asked
+
+<AccordionGroup>
+  <Accordion title="How do students get to the activity?">
+    Once created, the activity is live — there's no separate publish step. It appears in the Activities tab of the classroom you assigned it to, and you can share its link directly.
+  </Accordion>
+
+  <Accordion title="Can I add headings or images to the passage?">
+    Not currently. The passage editor supports text formatting, links, and lists — headings and images aren't available in it.
+  </Accordion>
+
+  <Accordion title="Is there a limit on how many blanks a passage can have?">
+    No fixed limit. Keep it readable — a passage that's more gap than text is hard to work through.
+  </Accordion>
+
+  <Accordion title="Can the AI suggest which words to blank out?">
+    Not today. Fill-in-the-blank activities are authored manually; ChimeEdu's only AI feature is [study guide drafting](/teachers/ai/study-guide-drafting).
+  </Accordion>
+
+  <Accordion title="Can students take it without an account?">
+    Yes — anyone with the link (and the password, if you set one) can complete the activity.
+  </Accordion>
+</AccordionGroup>
