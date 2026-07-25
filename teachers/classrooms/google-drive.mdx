@@ -1,10 +1,14 @@
 ---
 title: "Link Google Drive Files to Your ChimeEdu Classroom"
 sidebarTitle: "Google Drive"
-description: "Link your institution's Google Drive to ChimeEdu to attach files and folders to classrooms, activities, and study guides — no duplication needed."
+description: "Connect your Google account to attach Drive files and folders to classrooms, activities, assessments, study guides, and Experiences — links, not copies."
 ---
 
-ChimeEdu's Google Drive integration lets you link files and folders from your institution's Drive directly to your classrooms and content — without duplicating a single file. Your students always see the most current version, and when you update a file in Drive, ChimeEdu reflects the change automatically.
+ChimeEdu's Google Drive integration lets you attach files and folders from your Drive to your classrooms and content — without duplicating anything. Because ChimeEdu links to the file rather than copying it, students always open the current version.
+
+<Note>
+  The connection is **per-teacher**, not institution-wide. You connect your own Google account — any Google account works — and it applies only to you. Connecting yours doesn't connect your colleagues', and there's no admin-level Drive setup.
+</Note>
 
 <Note>
   Google Drive integration is available on **Plus** and **Premium** plans, both of which are coming soon. See [Plans and Pricing](/teachers/plans-and-pricing) to find out more.
@@ -12,11 +16,11 @@ ChimeEdu's Google Drive integration lets you link files and folders from your in
 
 ## How it works
 
-When you connect Google Drive to ChimeEdu, you're creating live links — not copies. ChimeEdu reads the file or folder from Drive each time a student accesses it, which means:
+When you attach something from Drive, ChimeEdu stores a link to it — not a copy. Opening it loads the file from Google, which means:
 
-- **Always current** — edits you make in Drive are immediately reflected on ChimeEdu. There's no need to re-upload or re-attach anything.
+- **Always current** — edits you make in Drive show up when the file is opened. There's no need to re-upload or re-attach anything.
 - **Never duplicated** — files live in Drive where your whole team can manage them. ChimeEdu simply provides the link to students at the right moment.
-- **Automatic name sync** — if you rename a file in Drive, ChimeEdu updates the display name automatically. Your students always see the correct filename.
+- **The name is fixed at attach time** — the file name is captured when you attach it. Renaming the file in Drive doesn't update the label in ChimeEdu, though the link keeps working. Re-attach the file if you need the new name shown.
 
 ## Connect Google Drive to a classroom
 
@@ -27,8 +31,8 @@ When you connect Google Drive to ChimeEdu, you're creating live links — not co
   <Step title="Click Connect Google Drive">
     Find the **Google Drive** section in your classroom settings and click **Connect Google Drive**.
   </Step>
-  <Step title="Authenticate with your institution Google account">
-    A Google sign-in prompt will appear. Sign in with the Google account associated with your institution's Drive. ChimeEdu only requests the permissions it needs to browse and attach files — it never modifies or deletes your Drive content.
+  <Step title="Sign in with your Google account">
+    A Google sign-in prompt appears. Use whichever Google account holds the files you want to attach — school or personal, it makes no difference. ChimeEdu requests **read-only** access: it can browse and read the files you pick, and cannot modify or delete anything in your Drive.
   </Step>
   <Step title="Browse and attach files or folders">
     Once authenticated, browse your Drive directly from ChimeEdu. Select the files or folders you want to attach to the classroom, then confirm your selection. The attached resources appear immediately in your classroom for enrolled students.
@@ -36,7 +40,7 @@ When you connect Google Drive to ChimeEdu, you're creating live links — not co
 </Steps>
 
 <Tip>
-  Attach an entire **folder** rather than individual files to give students access to a whole set of resources at once — for example, a unit folder containing lesson notes, worksheets, and reference documents. When you add new files to the folder in Drive, they become available in ChimeEdu automatically.
+  You can attach a **folder** as well as individual files. Note that a folder attaches as a **link to the folder in Drive** — ChimeEdu doesn't list its contents inside the page, so students follow the link to Google Drive to see what's inside. Make sure the folder's own Drive sharing permissions let your students open it.
 </Tip>
 
 ## Where you can use Google Drive
@@ -47,11 +51,8 @@ Once you've connected Google Drive to your account, you can attach Drive files a
   <Card title="Classrooms" icon="chalkboard">
     Attach resource folders and lesson plans directly to a classroom so enrolled students can access supporting materials alongside their activities.
   </Card>
-  <Card title="Map Activities" icon="map-pin">
-    Link Drive files to individual map pins — attach images, PDFs, or reference documents to specific locations on an interactive map.
-  </Card>
-  <Card title="Timelines" icon="timeline">
-    Add Drive files as supporting resources on timeline events, giving students primary sources and reference materials in context.
+  <Card title="Activities" icon="map-pin">
+    Attach Drive files to a map, timeline, quiz, flash card, or fill-in-the-blank activity. Attachments belong to the **activity as a whole** and appear on its landing page — they can't be pinned to an individual map pin or timeline event.
   </Card>
   <Card title="Flash Cards" icon="clone">
     Attach Drive images or documents to flash card decks to enrich vocabulary and concept cards with visual reference material.
@@ -60,6 +61,6 @@ Once you've connected Google Drive to your account, you can attach Drive files a
     Include Drive files as reading materials or stimulus documents that students can reference while completing an assessment.
   </Card>
   <Card title="Study Guides" icon="book-open">
-    Embed Drive folders and files inside study guide sections so students have everything they need to revise in one structured place.
+    Embed Drive folders and files inside study guide sections so students have everything they need to review in one structured place.
   </Card>
 </CardGroup>
