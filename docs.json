@@ -1,0 +1,135 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "ChimeEdu Help Center",
+  "theme": "almond",
+  "favicon": "https://media.brand.dev/6d2ec165-ea36-4c23-ac2f-00544cd5d33d.png",
+  "logo": {
+    "light": "/images/chimeedu-mark-onlight-1024(1).png",
+    "dark": "/images/chimeedu-mark-ondark-1024(1).png",
+    "href": "https://help.chimeedu.com"
+  },
+  "colors": {
+    "primary": "#161636",
+    "light": "#848c9c",
+    "dark": "#cacbd2"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Go to ChimeEdu",
+      "href": "https://app.chimeedu.com"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "For Teachers",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "teachers/introduction",
+              "teachers/create-account",
+              "teachers/account-security",
+              "teachers/plans-and-pricing"
+            ]
+          },
+          {
+            "group": "Classrooms",
+            "pages": [
+              "teachers/classrooms/overview",
+              "teachers/classrooms/create-classroom",
+              "teachers/classrooms/enrol-students",
+              "teachers/classrooms/google-drive"
+            ]
+          },
+          {
+            "group": "Activities",
+            "pages": [
+              "teachers/activities/quizzes",
+              "teachers/activities/maps",
+              "teachers/activities/timelines",
+              "teachers/activities/flash-cards",
+              "teachers/activities/fill-in-the-blank",
+              "teachers/activities/quick-activities"
+            ]
+          },
+          {
+            "group": "Assessments & Guides",
+            "pages": [
+              "teachers/assessments",
+              "teachers/study-guides",
+              "teachers/experiences"
+            ]
+          },
+          {
+            "group": "AI Tools",
+            "pages": [
+              "teachers/ai/overview",
+              "teachers/ai/study-guide-drafting",
+              "teachers/ai/fill-in-the-blank-authoring"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "For Students",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "students/introduction",
+              "students/create-account",
+              "students/join-classroom"
+            ]
+          },
+          {
+            "group": "Activities",
+            "pages": [
+              "students/joining-a-quiz",
+              "students/exploring-maps",
+              "students/timelines-and-flash-cards",
+              "students/assessments",
+              "students/experiences"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help & Support",
+        "groups": [
+          {
+            "group": "FAQs",
+            "pages": [
+              "help/faq-teachers",
+              "help/faq-students"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "help/account-and-login",
+              "help/activities-and-quizzes",
+              "help/accessibility"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "help/contact-and-support",
+              "help/changelog"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {}
+  },
+  "integrations": {
+    "ga4": {
+      "measurementId": "G-767QR52HMY"
+    }
+  }
+}

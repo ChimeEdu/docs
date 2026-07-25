@@ -1,0 +1,154 @@
+---
+title: "ChimeEdu Changelog — Latest Updates and New Features"
+sidebarTitle: "Changelog"
+description: "See what's new in ChimeEdu — recent feature releases, UI improvements, and bug fixes across the platform. Updated with every release."
+---
+
+ChimeEdu is regularly updated with new features, improvements, and fixes. Below are the highlights from recent releases.
+
+<Note>
+  For the full changelog, visit [app.chimeedu.com/updates](https://app.chimeedu.com/updates).
+</Note>
+
+---
+
+## v0.9.2 — Daystrom
+
+**June 3, 2026**
+
+**Added**
+- **Platform Search** — A new search experience across every classroom, activity, assessment, study guide, experience, student roster, and Knowledge Base article you own or have access to. Available from the dashboard hero bar, the top-nav mini search, and a full `/search` results page with type and classroom filters.
+- **Live Search Indexing** — Content you create, rename, or delete appears in search results within seconds — no manual reindex required.
+- **Dashboard Hero Search** — Instant results grouped by type with quick-filter tabs (Classrooms, Activities, Learning Tools, Students, Actions, Help).
+
+**Changed**
+- Dashboard welcome layout now displays as a single greeting line with improved spacing.
+- Type accent colours (classrooms coral, activities green, assessments yellow, study guides purple, experiences blue) are now consistent across search results, dashboard, and the Features mega menu.
+- Privacy Policy updated to reflect new search infrastructure.
+
+**Fixed**
+- Students enrolled in multiple classrooms now appear as a single search result listing all their classrooms, instead of once per enrolment.
+- Layout overflow bug resolved for search results and dashboard activity cards under long titles.
+
+---
+
+## v0.9.1 — Daystrom
+
+**April 29, 2026**
+
+**Added**
+- **Accessibility Conformance Report** — New `/accessibility` page publishes the public VPAT 2.5 Rev WCAG report.
+- **Map Activity** — Keyboard and on-screen-button controls for moving pins (Teacher Mode) and panning the map, as accessible alternatives to mouse-drag. Includes screen-reader announcements after each move.
+- **Timeline PDF Export** — Server-side rendered with full PDF/UA-1 tagging: selectable text, real heading structure, alt text, and document title in metadata.
+- **Form autocomplete** — Sign-up form now supports browser autofill for email, name, password, and organisation fields.
+
+**Changed**
+- Theme switcher now uses consistent sun / moon / half-circle iconography across every theme menu.
+- Touch targets (notification bell, per-notification delete controls) enlarged for easier tapping on mobile.
+- Browser tabs now show route-specific page titles (e.g. "ChimeEdu ∙ Classrooms") on every page.
+
+**Fixed**
+- Theme menu label and screen reader announcement now stay in sync when switching between Light / Dark / System.
+- Theme menu trigger correctly linked to its menu for assistive technology users.
+
+---
+
+## v0.9.0 — Daystrom
+
+**April 6, 2026**
+
+**Added**
+- **Fill-in-the-Blank Activity Type** — Rich text passage authoring with inline blanks, auto-grading, hints, and answer variants. Includes a public player and landing page.
+- **Dashboard Redesign** — New layout with fixed navbar, push sidebar, sub-navigation pills, animated welcome component, and account drop-up menu.
+- **Study Guide Video Blocks** — YouTube and Vimeo embeds, plus local video upload support.
+- **Experience Visibility Controls** — Public sharing toggles for Travel and Google Drive file sections.
+
+**Changed**
+- All activity types now share a single unified hero card layout on the dashboard.
+- Transactional email templates redesigned with branded styling.
+
+**Fixed**
+- Fill-in-the-Blank field naming inconsistencies resolved.
+- Dashboard layout regressions in hero grid and flex containers fixed.
+
+---
+
+## v0.8.0 — Daystrom
+
+**March 17, 2026**
+
+**Added**
+- **iPad & Tablet Optimisation** — Safe area insets for notched devices, dynamic viewport height for iOS Safari, 44px touch targets, and touch-friendly hover/focus states.
+- **Google Drive Attachments on Public Study Guide Pages** — Files & Resources section now visible on shared study guide links.
+
+**Changed**
+- Responsive card grids improved with intermediate breakpoints across 15+ pages for better tablet layouts.
+- Experience journal entry limit increased from 8 to 20 entries per journal.
+- Focus visibility improved with accent colour outlines for keyboard and touch navigation.
+
+**Fixed**
+- Experience status manual overrides (Arrive/Depart/Pending) now persist correctly.
+- Timezone-aware location status computation fixed for correct date handling.
+- Study Guide public page: removed duplicate footer, fixed Table of Contents hidden behind navbar.
+
+---
+
+## v0.7.0 — Daystrom
+
+**January 19, 2026**
+
+**Added**
+- **Timeline Activity Type** — Complete implementation with event management and chronological visualisation. Includes a full offcanvas editor, interactive horizontal and vertical player, play mode with auto-progression, PDF and image export, location integration, and search and filter.
+- **Google Drive Integration for Timelines** — Attach files and folders to timeline activities.
+
+**Changed**
+- Timeline added as a new activity type option throughout the creation workflow and dashboard.
+- Support page redesigned with updated layout and direct links to Knowledge Base, email support, and platform status.
+
+**Fixed**
+- Timeline event positioning, card alignment, connector placement, and scrolling behaviour resolved across multiple fixes in this release.
+
+---
+
+## v0.6.0 — Daystrom
+
+**January 17, 2026**
+
+**Added**
+- **Flash Card Activity Type** — Complete implementation with deck and card management, an offcanvas editor with drag-and-drop reordering, an interactive study player (Flip, Type Answer, Multiple Choice modes), spaced-repetition scheduling, image support, and rich text on both sides of each card.
+- **Google Drive Integration for Flash Cards** — Attach files and folders to flash card activities.
+- **Card Progress Tracking** — Individual progress tracking per card with spaced-repetition intervals.
+
+**Changed**
+- Flash Card added as a new activity type option throughout the creation workflow and dashboard.
+- Google Drive integration extended to support Flash Card activities.
+
+**Fixed**
+- Card deletion and update API parameter mismatches resolved.
+- Correct card IDs now passed to all backend operations.
+
+---
+
+## v0.5.0 — Daystrom
+
+**January 15, 2026**
+
+**Added**
+- **Assessment Notifications System** — Email and on-platform notifications sent to teachers when students submit assessments.
+- **Notification Bell in Navbar** — Unread count badge, bell menu with recent notifications, and a full Notifications page with All/Unread filtering.
+- **Notification Preferences** — Control notification settings in Account Settings.
+
+**Changed**
+- Assessment submission workflow enhanced with automatic teacher notifications.
+- Navbar updated with notification bell for quick access.
+- Account Settings updated with a dedicated notification preferences section.
+
+**Fixed**
+- Teacher awareness of student submissions improved.
+- Notification delivery reliability enhanced.
+
+---
+
+<Note>
+  ChimeEdu follows a **continuous deployment model**. Minor updates, accessibility fixes, and security patches are shipped frequently between numbered releases. For the complete history, visit [app.chimeedu.com/updates](https://app.chimeedu.com/updates).
+</Note>

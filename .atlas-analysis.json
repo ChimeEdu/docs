@@ -1,0 +1,141 @@
+{
+  "projectType": "saas",
+  "projectName": "ChimeEdu",
+  "projectDescription": "ChimeEdu is an AI-powered interactive learning platform that enables K-12 teachers to create engaging classroom activities — including live quizzes, maps, timelines, flash cards, assessments, and study guides — and allows students to participate in those experiences from any device.",
+  "theme": "almond",
+  "primaryColor": "#101533",
+  "lightColor": "#848c9c",
+  "darkColor": "#cacbd2",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "For Teachers",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "teachers/introduction",
+              "teachers/create-account",
+              "teachers/account-security",
+              "teachers/plans-and-pricing"
+            ]
+          },
+          {
+            "group": "Classrooms",
+            "pages": [
+              "teachers/classrooms/overview",
+              "teachers/classrooms/create-classroom",
+              "teachers/classrooms/enrol-students",
+              "teachers/classrooms/google-drive"
+            ]
+          },
+          {
+            "group": "Activities",
+            "pages": [
+              "teachers/activities/quizzes",
+              "teachers/activities/maps",
+              "teachers/activities/timelines",
+              "teachers/activities/flash-cards",
+              "teachers/activities/fill-in-the-blank",
+              "teachers/activities/quick-activities"
+            ]
+          },
+          {
+            "group": "Assessments & Guides",
+            "pages": [
+              "teachers/assessments",
+              "teachers/study-guides",
+              "teachers/experiences"
+            ]
+          },
+          {
+            "group": "AI Tools",
+            "pages": [
+              "teachers/ai/overview",
+              "teachers/ai/study-guide-drafting",
+              "teachers/ai/fill-in-the-blank-authoring"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "For Students",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "students/introduction",
+              "students/create-account",
+              "students/join-classroom"
+            ]
+          },
+          {
+            "group": "Activities",
+            "pages": [
+              "students/joining-a-quiz",
+              "students/exploring-maps",
+              "students/timelines-and-flash-cards",
+              "students/assessments",
+              "students/experiences"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help & Support",
+        "groups": [
+          {
+            "group": "FAQs",
+            "pages": [
+              "help/faq-teachers",
+              "help/faq-students"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "help/account-and-login",
+              "help/activities-and-quizzes",
+              "help/accessibility"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "help/contact-and-support",
+              "help/changelog"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Live multiplayer quizzes with join codes, leaderboards, and per-question timers",
+    "Interactive map activities with pinned locations and rich content cards",
+    "Chronological timeline activities with play mode for guided lessons",
+    "Spaced-repetition flash card decks with flip, type, and multiple-choice study modes",
+    "Fill-in-the-blank cloze activities with auto-grading and answer variants",
+    "Comprehensive assessments with auto-grading, submission tracking, and per-question analytics",
+    "Classroom hub linking all activities, assessments, study guides, and experiences",
+    "AI-assisted study guide drafting (Premium) powered by Claude",
+    "Google Drive integration for attaching institution files (Plus & Premium)",
+    "Experiences feature for structured field trips with travel mapping and student journals",
+    "Quick Activities — temporary activities with no account required",
+    "Two-factor authentication and passkey (WebAuthn) support",
+    "WCAG 2.1 Level AA accessibility compliance"
+  ],
+  "publicApiSurface": [
+    "Teacher account registration and login (email/password, passkey)",
+    "Student account registration and classroom enrollment via join link",
+    "Guest quiz participation via 6-character join code (no account required)",
+    "Quick Activity creation without an account",
+    "Classroom creation and activity publishing",
+    "Assessment submission and real-time results dashboard",
+    "Study guide AI drafting (Premium tier)",
+    "Google Drive file/folder linking (Plus & Premium tiers)",
+    "Experience creation with travel mapping and student journal entries",
+    "Platform status page at status.chimeedu.com",
+    "Accessibility conformance report PDF export at /api/accessibility/export.pdf"
+  ]
+}
