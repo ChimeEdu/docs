@@ -1,10 +1,10 @@
 ---
 title: "Create and Manage Assessments in Your ChimeEdu Classroom"
 sidebarTitle: "Assessments"
-description: "Build auto-graded ChimeEdu assessments with five question types, timers, and password access — and review submissions as they arrive."
+description: "Build ChimeEdu assessments with per-question points, due dates and late windows, assign them to enrolled students, score written answers, and send results."
 ---
 
-Assessments are ChimeEdu's tool for formal, recorded work. Unlike a live quiz, an assessment is taken independently by each student and every submission is stored for you to review afterwards.
+Assessments are ChimeEdu's tool for formal, recorded work. Unlike a live quiz, an assessment is taken independently by each student, every submission is stored for your review, and each submission is tied to the student's ChimeEdu account.
 
 ## Question types
 
@@ -15,78 +15,100 @@ There are five:
 | **Multiple Choice**         | Yes         | Up to 6 options              |
 | **True/False**              | Yes         |                              |
 | **Image Select**            | Yes         | Up to 4 images in a 2×2 grid |
-| **Short Answer**            | No          | Free-text response           |
-| **Long Answer (Rich Text)** | No          | Formatted extended response  |
+| **Short Answer**            | No — you score it | Free-text response     |
+| **Long Answer (Rich Text)** | No — you score it | Formatted extended response |
 
-<Warning>
-  **Written questions cannot currently be given a score.** Short Answer and Long Answer responses are not auto-graded, and there is no way for you to award points to them — you can leave comments on a response and overall feedback on the submission, but the points stay at zero while the question still counts toward the total. An assessment that mixes written and objective questions will therefore always report less than 100%. Until this changes, either keep written questions in **submission-only** assessments, or treat the reported percentage as covering the objective questions alone.
-</Warning>
+Every question carries its own point value, so an essay can be worth more than a true/false. Written answers are scored by you: open a submission, award points on each written response (up to that question's value), and the submission total recalculates.
 
 ## Building an assessment
 
 <Steps>
   <Step title="Create it">
-    From your dashboard choose **New Assessment**, give it a title and description, and optionally add a featured image or icon.
+    From your dashboard choose **New Assessment**, give it a title and description, and choose **Grade & score** (auto-grades objective questions) or **Submission only** (collects responses without scoring).
   </Step>
 
-  <Step title="Set a password">
-    Every assessment has a password — it's required, not optional. Students enter it before they can begin, so share it when you're ready for them to start.
-  </Step>
-
-  <Step title="Choose how it's scored">
-    **Grade & score** runs the auto-grader on objective questions when a student submits. **Submission only** collects responses without scoring — the better fit for reflective or written work.
+  <Step title="Link classrooms">
+    Link the assessment to one or more of your classrooms. Enrollment in a linked classroom is what gives students access — there is no assessment password.
   </Step>
 
   <Step title="Add your questions">
-    Mix the five types freely. Each question can carry images, and you set its point value.
+    Mix the five types freely. Each question can carry images, a point value, and an optional per-question timer.
+  </Step>
+
+  <Step title="Set the schedule">
+    Set an optional **due date**. If you allow **late submissions**, choose the late window (1–7 days after the due date). Setting a due date also requires you to choose how a **missed** assessment is scored — **0** or **Ungraded** — so there's no silent default. An optional **hard close override** sets an absolute cutoff regardless of the other settings.
   </Step>
 
   <Step title="Set timing">
-    You can set an **overall time limit** in minutes, which auto-submits when it expires, and/or a **per-question limit** in seconds, which moves the student on automatically. You can also require the assessment be completed in one sitting.
+    You can set an **overall time limit** in minutes, which auto-submits when it expires, and/or **per-question limits** in seconds. You can also require the assessment be completed in one sitting.
   </Step>
 
   <Step title="Preview, then publish">
-    Preview runs the whole assessment without creating a submission. Publishing lists it in the **Assessments** tab of any classroom you've linked.
+    Preview runs the whole assessment without creating a submission. Publishing makes it available to assigned students — and notifies them.
   </Step>
 </Steps>
 
 <Note>
-  Publishing doesn't notify anyone — there's no email or in-app alert to students. Tell your class it's ready, and share the password.
+  Publishing **does** notify: every assigned student gets an in-app notification and an email when you first publish, when you assign them later, and when you open a make-up window for them.
 </Note>
 
-## How students take it
+## Who can take it — enrollment, not passwords
 
-Students open the assessment, enter the **password**, then enter their **first and last name** (optionally an email address and a student ID), and begin.
+Access is based on classroom enrollment. When a student opens the assessment link:
+
+* **Enrolled and signed in** — they see their own name, school email and avatar, and start with one click. Their identity comes from their account; nothing is typed in.
+* **Signed in but not in the classroom** — one click enrolls them into the classroom and the assessment together. The link you share doubles as the classroom invitation.
+* **Signed out** — they're told to check their email for their enrollment link, with a sign-in option for students who already have accounts.
+
+Inviting students by email from your classroom page sends each one a personal link. If the email address doesn't have a ChimeEdu account yet, the invitation includes a registration code that pre-fills sign-up (student accounts only, valid 7 days) — and you get a copyable link for each new student in case school mail filters eat the email.
+
+## Assigning students
+
+The assessment page shows your roster — every student enrolled in the linked classrooms — with an **X of Y assigned** count. By default, everyone enrolled is assigned. You can:
+
+* **Assign or unassign** students individually or with select-all.
+* **Unassign after submission** — the submission is kept and marked *Unassigned* in your table.
+* **Open a make-up window** for one student after the due date or close — unbounded by default, with an optional end time. A make-up is a re-take: it stays open until that student submits again.
+
+Students see the assessment on their dashboard with a badge: **New** (first 24 hours), **Due today**, **Overdue** (only if you allow late submissions), **Missed**, or **Make-up open**. "Due today" follows the **classroom's timezone**, which you can set in classroom settings (new classrooms inherit yours).
+
+## Password-only access — the exam-day fallback
+
+For a student whose account won't work on exam day — or an **under-13 student whose account is still waiting for a parent's approval** — you can enable **password-only access** in the assessment settings (it's off by default).
+
+Generate a per-student access code from the assessment page: enter the student's email and name, and optionally grant **extended time on the record itself**. The student gets an email with a one-click link and a one-time password bound to their email; you also see the password once so you can hand it over in person.
 
 <Warning>
-  Identity is self-reported. Submissions are not linked to ChimeEdu student accounts or to classroom enrollment — a student types their name, and that name is what appears on the submission. Ask your class to use a consistent format so you can match submissions to your roster.
+  Access codes **expire 2 hours after you create them** — generate them at exam time, not the night before.
 </Warning>
 
-Students can **Pause** to save progress and return later, unless you've required one sitting. If they close the tab without pausing, unsaved answers on the current question are lost, though reopening the assessment resumes their saved progress.
-
-## Reviewing submissions
-
-The assessment page lists submissions with a status of **In progress**, **Submitted**, or **Graded**. Open one to see the student's answers, add a comment on any individual response, and leave overall feedback — which does appear to the student.
-
-You can export the submission list to CSV for your own records or gradebook.
-
 <Note>
-  The submission list doesn't update by itself — refresh the page to pull in new arrivals. And because submissions only exist once a student has started, there's no "not yet started" list to check against your roster.
+  **The under-13 route.** A student under 13 can't sign in until a parent approves their account. Password-only access is how they still sit the assessment: no account is created and no student profile exists — their name and email are stored only on the submission, under the consent you attest to holding when you invite and contact students. This is deliberate: it keeps the parental-approval protection intact rather than bypassing it.
 </Note>
+
+## Reviewing submissions and sending results
+
+The assessment page lists submissions with a status of **In progress**, **Submitted**, or **Graded**. Open one to see the student's answers, award points on written responses, comment on any individual response, and leave overall feedback.
+
+Students don't see scores in the product. When you're ready, use **Send results** to email a student their score and your comments — nothing is released until you do. You can also export the list to CSV, download any submission as a PDF, or download all submissions as a zip of PDFs.
 
 ## Accessibility and accommodations
 
-Students with **extended time** enabled on their roster entry get triple the time on **per-question** timers.
-
-<Warning>
-  Two limits to plan around: extended time does **not** apply to the overall assessment timer, and it only applies to students who are **signed in** — because the flag lives on their account. A student who takes an assessment without signing in won't get their accommodation. Ask students entitled to extra time to sign in before starting, and prefer per-question timers when accommodations matter.
-</Warning>
+Students with **extended time** enabled on their roster entry get triple time on per-question timers **and** the overall timer. For password-only access, set extended time on the access record when you create it — the accommodation no longer depends on the student being signed in.
 
 ## Frequently asked
 
 <AccordionGroup>
   <Accordion title="Can students see their score?">
-    Not in ChimeEdu. After submitting, a student sees a confirmation screen with your confirmation message and any overall feedback you've left — but no score or per-question breakdown, and there's no way for them to return and review right and wrong answers. Share results yourself if students need them.
+    Only when you send it. After submitting, a student sees a confirmation screen. Scores, per-response comments, and feedback reach them when you use **Send results** on their submission.
+  </Accordion>
+
+  <Accordion title="Who can open a published assessment?">
+    Students enrolled in a linked classroom who are assigned to it (plus anyone you've given a password-only access code). Anonymous access is gone — opening the link signed-out shows a "check your email" screen, not the questions.
+  </Accordion>
+
+  <Accordion title="What happens when the due date passes?">
+    Without late submissions, the assessment closes at the due date. With late submissions, it stays open for your chosen window (1–7 days) and those students show as **Overdue**. After the close, a student who didn't submit shows as **Missed** and is scored 0 or left ungraded — whichever you chose. You can still open a per-student make-up window at any point.
   </Accordion>
 
   <Accordion title="Is there a matching question type?">
@@ -94,11 +116,7 @@ Students with **extended time** enabled on their roster entry get triple the tim
   </Accordion>
 
   <Accordion title="Are there per-question analytics?">
-    Not currently. You can see each submission individually and export the list to CSV, but ChimeEdu doesn't calculate class-wide per-question statistics.
-  </Accordion>
-
-  <Accordion title="Who can open a published assessment?">
-    Anyone with the classroom URL can see it listed, and anyone with the assessment password can take it. Enrollment isn't checked — the password is the access control.
+    Not currently. You can review each submission individually and export the list to CSV, but ChimeEdu doesn't calculate class-wide per-question statistics.
   </Accordion>
 
   <Accordion title="Do assessments count toward my plan limit?">
