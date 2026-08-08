@@ -1,45 +1,36 @@
 ---
 title: "Create Your ChimeEdu Teacher Account"
 sidebarTitle: "Create Account"
-description: "Register for ChimeEdu during Closed Alpha — invitation token, school email requirement, email confirmation, and first-time setup."
+description: "Register for ChimeEdu — school email requirement, email confirmation, and first-time setup."
 ---
 
-<Warning>
-  **ChimeEdu is in Closed Alpha.** Registration is currently by invitation only. You need a personal **invitation token** issued by the ChimeEdu team before you can create an account — the sign-up form will not submit without one. If you'd like to join the Alpha, [get in touch](https://app.chimeedu.com/contact).
-</Warning>
+<Note>
+  **ChimeEdu is in open Alpha.** Anyone can register — no invitation is needed. New accounts start on the **Free** plan; see [Plans & Pricing](/teachers/plans-and-pricing) for what each tier includes.
+</Note>
 
 ## Before you start
 
-Two requirements catch people out:
+One requirement catches people out:
 
-* **Your invitation token.** An 8-character code issued to you by the ChimeEdu team. It's tied to the email address it was issued for, so register with that same address.
-* **A school or institutional email address.** ChimeEdu does not accept personal email providers — Gmail, Outlook, Hotmail, Yahoo, iCloud, Proton, AOL, and disposable-mail domains are all rejected at sign-up. Use the address your school gave you.
+- **A school or institutional email address.** ChimeEdu does not accept personal email providers — Gmail, Outlook, Hotmail, Yahoo, iCloud, Proton, AOL, and disposable-mail domains are all rejected at sign-up. Use the address your school gave you.
 
 ## Creating your account
 
 <Steps>
   <Step title="Open the registration page">
-    Go to [app.chimeedu.com/register](https://app.chimeedu.com/register). While the Alpha is running you'll see a **ChimeEdu is in Closed Alpha** banner at the top of the form.
+    Go to [app.chimeedu.com/register](https://app.chimeedu.com/register).
   </Step>
-
-  <Step title="Enter your invitation token">
-    Type the token into the **Invitation Token** field. It must match the email address you're registering with.
-  </Step>
-
   <Step title="Fill in your details">
     You'll be asked for your name, your school email address, and a password. Choose your role from the dropdown — Teacher, School Administrator, Principal / Dean, Student, or Other. School or institution is optional at this stage.
 
     A username is generated for you from your name; you can edit it if you'd prefer something different.
   </Step>
-
   <Step title="Choose a password">
     Your password needs at least **10 characters**, including an uppercase letter, a lowercase letter, a number, and a symbol. The form checks each rule as you type.
   </Step>
-
   <Step title="Accept the terms and create the account">
     Tick the box to accept the [Terms of Service](https://app.chimeedu.com/terms) and [Privacy Policy](https://app.chimeedu.com/privacy), then choose **Create Account**.
   </Step>
-
   <Step title="Confirm your email address">
     ChimeEdu sends a confirmation link to the address you registered with. **You cannot sign in until you click it** — the link is valid for 24 hours. If it expires, request a new one from the confirmation page.
   </Step>
@@ -66,12 +57,12 @@ Once you're in, consider turning on two-factor authentication or registering a p
 ## Troubleshooting sign-up
 
 <AccordionGroup>
-  <Accordion title="&#x22;An invitation token is required to register during Closed Alpha.&#x22;">
-    The token field is empty or the token wasn't recognized. Check for typos and confirm you're registering with the exact email address your invitation was issued to.
+  <Accordion title='"Personal email providers are not accepted."'>
+    You've used a personal address such as Gmail or Outlook. Register with your school or institutional email instead.
   </Accordion>
 
-  <Accordion title="&#x22;Personal email providers are not accepted.&#x22;">
-    You've used a personal address such as Gmail or Outlook. Register with your school or institutional email instead.
+  <Accordion title='The verification check will not load, or the form says "Verification required".'>
+    Sign-up includes a quick automated verification (Cloudflare Turnstile) that usually completes by itself just above the **Create Account** button — most people never interact with it. If the form reports it missing or failed, wait a moment for the checkmark and try again, or refresh the page. If it repeatedly fails to load, your school or network may be blocking **challenges.cloudflare.com** — ask your network administrator to allow it.
   </Accordion>
 
   <Accordion title="The form says my email is already registered.">
