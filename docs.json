@@ -110,7 +110,8 @@
             "pages": [
               "help/account-and-login",
               "help/activities-and-quizzes",
-              "help/accessibility"
+              "help/accessibility",
+              "help/google-drive-picker"
             ]
           },
           {
