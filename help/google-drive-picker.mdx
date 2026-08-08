@@ -1,0 +1,81 @@
+---
+title: "Fix: The Google Drive Picker Won't Open"
+sidebarTitle: "Drive Picker Won't Open"
+description: "If the Google Drive picker only dims the screen and never opens, your browser is blocking Google's cookies. Here's how to fix it in Chrome, Safari, and Firefox."
+keywords: ["google drive picker", "browse google drive", "picker won't open", "third-party cookies", "screen dims", "incognito"]
+---
+
+When you click **Browse Google Drive** to attach a file, a window from Google should appear so you can choose the file you want. If instead the screen just dims and nothing opens — or you see a short message about third-party cookies — this page explains why, and how to fix it in a few clicks.
+
+<Note>
+  Nothing is wrong with your ChimeEdu account or your files. This is a browser **privacy setting** getting in the way of Google's file picker, and it's quick to sort out.
+</Note>
+
+## What causes this
+
+The Google Drive picker is a small window that comes straight from Google and opens **inside** ChimeEdu. For Google to show it, your browser has to let Google set a small file called a **cookie** while you're on the ChimeEdu website. Two common settings stop that from happening:
+
+- **Third-party cookies are switched off.** To protect your privacy, many browsers block "third-party" cookies — cookies from a company other than the site in your address bar. Google's picker needs one of those cookies to appear, so blocking them blocks the picker too.
+- **You aren't signed in to Google in this browser.** The picker needs to know which Google account's files to show you. If you're not signed in to Google, it has nothing to display.
+
+**Private and Incognito windows turn both of these off by default** — so if you're browsing in one of those, that is almost always the reason.
+
+<Tip>
+  **The fastest fix:** open ChimeEdu in a normal window (not a Private or Incognito one), make sure you're [signed in to Google](https://accounts.google.com), and try again. If that works, you don't need to change any settings at all.
+</Tip>
+
+## Fix it in your browser
+
+If you'd rather keep using the window you're in, allow cookies for Google using the steps for your browser below. You only need to do this once.
+
+### Google Chrome
+
+<Steps>
+  <Step title="Open Chrome's cookie settings">
+    Click the three-dot menu in the top-right corner, choose **Settings**, then open **Privacy and security → Third-party cookies**.
+  </Step>
+  <Step title="Allow cookies for Google">
+    Choose **Allow third-party cookies**. If you'd prefer to keep them blocked everywhere else, instead find **Allowed to use third-party cookies**, click **Add**, and enter `[*.]google.com` — this permits Google only and leaves the rest of your protection on.
+  </Step>
+  <Step title="Go back to ChimeEdu">
+    Return to your ChimeEdu tab, refresh the page, and click **Browse Google Drive** again.
+  </Step>
+</Steps>
+
+### Safari
+
+<Steps>
+  <Step title="Open Safari's privacy settings">
+    On a Mac, open **Safari → Settings → Privacy**. On an iPad or iPhone, open the **Settings** app and tap **Safari**.
+  </Step>
+  <Step title="Turn off cross-site tracking">
+    Switch off **Prevent cross-site tracking**, and make sure **Block all cookies** is also turned off.
+  </Step>
+  <Step title="Go back to ChimeEdu">
+    Return to your ChimeEdu tab, refresh the page, and click **Browse Google Drive** again.
+  </Step>
+</Steps>
+
+### Firefox
+
+<Steps>
+  <Step title="Open the protection panel">
+    While you're on ChimeEdu, click the **shield icon** just to the left of the web address.
+  </Step>
+  <Step title="Turn off Enhanced Tracking Protection for ChimeEdu">
+    Switch **Enhanced Tracking Protection** to **off** for this site. This applies only to ChimeEdu and leaves your protection switched on everywhere else.
+  </Step>
+  <Step title="Go back to ChimeEdu">
+    The page reloads on its own. Click **Browse Google Drive** again to try the picker.
+  </Step>
+</Steps>
+
+## After you change the setting
+
+1. **Refresh** your ChimeEdu tab so the new setting takes effect.
+2. Make sure you're **signed in to Google** — visit [accounts.google.com](https://accounts.google.com) and sign in with the account whose Drive you connected.
+3. Click **Browse Google Drive** again. The picker should now open normally.
+
+<Note>
+  Still stuck after trying the steps above? [Contact support](/help/contact-and-support) and let us know which browser and device you're using — that helps us point you to the right fix quickly.
+</Note>
