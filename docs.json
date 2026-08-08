@@ -117,8 +117,7 @@
           {
             "group": "Platform",
             "pages": [
-              "help/contact-and-support",
-              "help/changelog"
+              "help/contact-and-support"
             ]
           }
         ]
@@ -142,6 +141,11 @@
     {
       "source": "/teachers/classrooms/enrol-students",
       "destination": "/teachers/classrooms/enroll-students",
+      "permanent": true
+    },
+    {
+      "source": "/help/changelog",
+      "destination": "https://app.chimeedu.com/changelog",
       "permanent": true
     }
   ]
