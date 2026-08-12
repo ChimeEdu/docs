@@ -65,7 +65,11 @@ The assessment page shows your roster — every student enrolled in the linked c
 - **Unassign after submission** — the submission is kept and marked _Unassigned_ in your table.
 - **Open a make-up window** for one student after the due date or close — unbounded by default, with an optional end time. A make-up is a re-take: it stays open until that student submits again.
 
-Students see the assessment on their dashboard with a badge: **New** (first 24 hours), **Due today**, **Overdue** (only if you allow late submissions), **Missed**, or **Make-up open**. "Due today" follows the **classroom's timezone**, which you can set in classroom settings (new classrooms inherit yours).
+Students see the assessment on their dashboard with a badge: **New** (first 24 hours), **Due today**, **Overdue** (only if you allow late submissions), or **Make-up open**. "Due today" follows the **classroom's timezone**, which you can set in classroom settings (new classrooms inherit yours).
+
+<Note>
+  **A student's dashboard shows only what they can still act on.** An assessment leaves it once they submit, and once it closes with no make-up open — so students never see a **Missed** badge sitting on their dashboard. **You still see every assessment and every student's status**, including missed ones, on the assessment page. Opening a make-up window puts it back on that student's dashboard.
+</Note>
 
 ## Password-only access — the exam-day fallback
 
@@ -85,9 +89,25 @@ Generate a per-student access code from the assessment page: enter the student's
 
 The assessment page lists submissions with a status of **In progress**, **Submitted**, or **Graded**. Open one to see the student's answers, award points on written responses, comment on any individual response, and leave overall feedback.
 
+**Your marking saves as you go.** Scores, per-response comments, feedback and the overall grade autosave a moment after you stop typing, with a **Saving… / Saved** indicator beside the buttons — you don't have to press a button per response. The buttons still work if you'd rather save explicitly, and if a save ever fails the indicator says so rather than failing quietly.
+
+### Overall grade
+
+Alongside the numeric score you can set an optional **Overall Grade** — a letter from A\+ to F, or **No grade**.
+
+Once every question is scored, ChimeEdu suggests the letter matching the percentage earned and offers a **Use suggested** button. It is only ever a suggestion: nothing is recorded until you pick one, you can choose any letter regardless of the percentage, and setting it back to **No grade** clears it.
+
+<Note>
+  No suggestion appears while any question is still unscored — a part-marked assessment shouldn't propose a grade that reads as final.
+</Note>
+
+When you send results, the grade appears prominently on the student's results page and in their email.
+
 **Nothing reaches the student until you use Send results** — marking and releasing are separate steps, so auto-scoring on submission never reveals anything on its own.
 
-When you send results, the student gets an in-app notification, a **Your results are ready** prompt on their dashboard, and an email. They can then open their own results page showing the total, the percentage, each question with the points earned, the answer they gave (and the correct one, for multiple choice), your per-response comments and your overall feedback. The page is tied to their account, so one student can't reach another's results by sharing the link.
+When you send results, the student gets an in-app notification, a **Your results are ready** prompt on their dashboard, and an email. They can then open their own results page showing the total, the percentage, any overall grade you set, each question with the points earned, the answer they gave (and the correct one, for multiple choice), your per-response comments and your overall feedback. The page is tied to their account, so one student can't reach another's results by sharing the link.
+
+Students also get a **My Results** page listing everything they've handed in. Before you send results an entry shows there as **Awaiting results** with no score — so a student can always confirm their submission arrived, without learning anything about their marks.
 
 <Tip>
   If you haven't finished marking the written answers, send results anyway when you want to: the student sees **"Some questions are still being scored"** and no percentage, so a part-marked assessment can't be mistaken for a final grade. Send again once you're done.
