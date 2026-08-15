@@ -53,6 +53,7 @@
               "teachers/activities/flash-cards",
               "teachers/activities/fill-in-the-blank",
               "teachers/activities/graphs-and-charts",
+              "teachers/activities/diagrams",
               "teachers/activities/quick-activities",
               "teachers/activities/issuance"
             ]
@@ -91,6 +92,7 @@
               "students/joining-a-quiz",
               "students/exploring-maps",
               "students/timelines-and-flash-cards",
+              "students/using-diagrams",
               "students/assessments",
               "students/experiences"
             ]
