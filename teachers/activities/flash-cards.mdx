@@ -14,6 +14,7 @@ Spaced repetition schedules each card based on how well a student knows it. Afte
   <Card title="Difficult cards" icon="arrow-up">
     Cards a student finds hard are scheduled for review sooner, giving them more chances to practice before the next lesson.
   </Card>
+
   <Card title="Mastered cards" icon="check">
     Cards a student knows confidently are shown less often, so study time is spent where it's most needed.
   </Card>
@@ -27,9 +28,11 @@ Students can switch freely between three study modes depending on how they want 
   <Card title="Flip mode" icon="rotate">
     Students see the term and flip the card to reveal the definition. Quick, low-friction recall practice.
   </Card>
+
   <Card title="Type the answer" icon="keyboard">
     Students type the definition before the card flips. Ideal for spelling practice and precise vocabulary recall.
   </Card>
+
   <Card title="Multiple choice" icon="list-check">
     Students choose the correct definition from a set of options. Great for guided review and building confidence.
   </Card>
@@ -42,7 +45,7 @@ Students can switch freely between three study modes depending on how they want 
     From your classroom dashboard, click **New Activity** and select **Flash Cards** from the activity type list.
   </Step>
   <Step title="Add your cards">
-    Add a deck first, then click **Add Card** for each item in it. Every card has a **Front Content** field and a **Back Content** field. Add as many cards as your deck requires.
+    Add a deck first, then click **Add Card** for each item in it. Every card has a **Front Content** field and a **Back Content** field. Add as many cards as your deck requires. To build a large deck quickly, you can also add many cards at once — see [Import cards from a CSV](#import-cards-from-a-csv) below.
   </Step>
   <Step title="Add images (optional)">
     On any card, click the image icon to attach a photo or illustration. Images appear on the front or back of the card depending on where you add them.
@@ -55,12 +58,41 @@ Students can switch freely between three study modes depending on how they want 
   </Step>
 </Steps>
 
+## Import cards from a CSV
+
+Building a large deck one card at a time is slow — especially if your terms already live in a spreadsheet or another study tool. Instead, you can add a whole batch of cards at once by importing a CSV file or pasting rows directly. This is the fastest way to move an existing set — for example, a deck you built in Quizlet — onto ChimeEdu.
+
+Each row becomes one card: the **first column** is the card front (the term), and the **second column** is the back (the definition).
+
+<Steps>
+  <Step title="Open the deck's cards">
+    In the flash card editor, expand the deck you want to add to. Next to **Add Card** you'll see an **Import CSV** button.
+  </Step>
+  <Step title="Upload a file or paste your rows">
+    Click **Import CSV**, then either choose a `.csv`, `.tsv`, or `.txt` file, or switch to the **Paste** tab and paste your rows straight from a spreadsheet or another study tool.
+  </Step>
+  <Step title="Check the preview">
+    ChimeEdu shows exactly what it will create — a table of every card's front and back, plus a count. If your file starts with a header row like "Term, Definition", tick **First row is a header** to skip it. Rows missing a term or a definition are skipped automatically and flagged.
+  </Step>
+  <Step title="Import">
+    Click **Import**, and the cards are added to the deck — ready to edit like any other card.
+  </Step>
+</Steps>
+
+<Tip>
+  Coming from Quizlet? Export your set (**Export** → comma or tab separated), then upload the file or paste it into the **Paste** tab. Comma, tab, and semicolon separators are all detected automatically, and any term or definition that contains a comma is handled correctly as long as it's quoted — which Quizlet's export does for you.
+</Tip>
+
+<Note>
+  Imported cards are created as plain text. Add images or bold and italic formatting afterward from each card's editor. You can import up to 1,000 cards at a time — split larger sets across more than one file.
+</Note>
+
 ## Progress tracking
 
 Students always know where they stand with a deck. ChimeEdu automatically categorizes every card into one of three states, updated in real time as students study:
 
 | Status | What it means |
-|---|---|
+| --- | --- |
 | **Mastered** | The student answered confidently across multiple review sessions. |
 | **In progress** | The student has reviewed the card but hasn't yet hit the mastery threshold. |
 | **New** | The card hasn't been reviewed yet in this session sequence. |
