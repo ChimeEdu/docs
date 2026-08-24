@@ -56,6 +56,7 @@
               "teachers/activities/diagrams",
               "teachers/activities/quick-activities",
               "teachers/activities/issuance",
+              "teachers/activities/graded-mode",
               "teachers/activities/archive-and-restore"
             ]
           },
