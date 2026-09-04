@@ -1,0 +1,33 @@
+---
+title: "IT and Network Requirements"
+sidebarTitle: "IT & Network"
+description: "What your IT department needs to allow for ChimeEdu to work on a managed school network, and how to pre-stage single sign-on."
+---
+
+The **IT & Network** page is for the people who run your school's network. Institution Admins and IT members can open it. Everything on it is generated from the same source that describes ChimeEdu's real network footprint, so it can't drift from what the app actually does.
+
+## Deployment facts
+
+The page lists ChimeEdu's primary domain, ports, TLS posture, and a note about institutional networks: all traffic is over HTTPS on port 443, including the live-quiz connection, and there is no IPv6 address to allow.
+
+<Warning>
+  Allow `*.chimeedu.com` over 443 — **don't pin IP addresses**. ChimeEdu's subdomains sit behind Cloudflare, whose addresses change.
+</Warning>
+
+## The copy-paste allowlist
+
+**Copy N hosts** puts the complete hostname allowlist on your clipboard, ready for a firewall or filtering console. Below it, the **Third-party origins** table explains what each host is for and when it's needed — maps, sharing, Google Drive, billing, media embeds, search, real-time quizzes — so your team can allow only what your school uses. Rows marked optional (analytics) can be blocked without affecting the platform.
+
+Fonts and other assets are served from ChimeEdu's own domain, so no font or CDN hosts need to be allowed.
+
+## Rate limits and school networks
+
+Many devices behind one school internet connection look like one address to ChimeEdu. Its rate limits are sized for that — a whole campus behind one address is expected and supported.
+
+## Single sign-on (not active yet)
+
+The **Single Sign-On** section lets you pre-stage configuration for Microsoft Entra / Azure AD, Google Workspace, Okta, or another provider: the email domains that would route to it, the sign-on or metadata URL, entity and tenant IDs, and notes. Configurations can be marked **Draft** or **Ready**.
+
+<Note>
+  SSO is configuration-only for now. Nothing here changes how anyone signs in, and no secrets are stored. Staff and teachers continue to sign in with their ChimeEdu credentials until SSO launches.
+</Note>
