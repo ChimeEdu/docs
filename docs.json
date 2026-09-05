@@ -58,7 +58,8 @@
               "teachers/activities/quick-activities",
               "teachers/activities/issuance",
               "teachers/activities/graded-mode",
-              "teachers/activities/archive-and-restore"
+              "teachers/activities/archive-and-restore",
+              "teachers/institution-library"
             ]
           },
           {
@@ -100,6 +101,41 @@
               "students/assessments",
               "students/graded-activities",
               "students/experiences"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "For Institution Staff",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "staff/introduction"
+            ]
+          },
+          {
+            "group": "People",
+            "pages": [
+              "staff/members-and-invitations",
+              "staff/teachers-and-students",
+              "staff/reassign-content"
+            ]
+          },
+          {
+            "group": "Institution",
+            "pages": [
+              "staff/campuses",
+              "staff/performance-and-adoption",
+              "staff/activity-log",
+              "staff/resource-library",
+              "staff/settings-and-branding"
+            ]
+          },
+          {
+            "group": "IT",
+            "pages": [
+              "staff/it-and-network"
             ]
           }
         ]
