@@ -1,0 +1,42 @@
+---
+title: "Verify Your Institution"
+sidebarTitle: "Verification"
+description: "How an institution proves it is really the school — a DNS record or a website file — and what verification changes."
+---
+
+An email address on your school's domain proves that someone is *affiliated* with the school. It does not prove they speak *for* the school, because students often share the same domain. Verification is about control: of the school's DNS, or of its website.
+
+An institution that ChimeEdu set up directly is already **Verified by ChimeEdu**. Adding a domain proof of your own is still worth doing — it makes the verification yours to keep, and it is what lets teachers on that domain link to your campuses as verified.
+
+## Who can do this
+
+Institution Admins and IT members, from **IT & Network → Verify your institution**. Leaders can see the status but not change it.
+
+## Two ways to prove control
+
+<Tabs>
+  <Tab title="DNS record (recommended)">
+    Add one TXT record at your DNS provider. It is harmless, reversible, and what most IT teams prefer.
+
+    1. Enter your institution's domain — the one your staff email addresses end with — and choose **DNS record**, then **Get my record**.
+    2. Copy the **host** (`_chimeedu.yourdomain.org`) and the **value** (`chimeedu-verify=…`) into a new TXT record at your DNS provider. Leave the TTL at your provider's default.
+    3. Press **Check now**. DNS changes can take up to an hour to appear; the claim stays open for 14 days.
+  </Tab>
+  <Tab title="Website file">
+    For schools where the website, not DNS, is what you control.
+
+    1. Choose **Website file**, then **Get my record**.
+    2. Publish a plain-text file at `https://yourdomain.org/.well-known/chimeedu-verify.txt` containing the token shown.
+    3. Press **Check now**. The file must be served from your own domain over HTTPS.
+  </Tab>
+</Tabs>
+
+## What happens after
+
+- The **Verification** row in Settings and the badge on the IT page read **Verified by domain**.
+- ChimeEdu re-checks every verified domain nightly. If the record disappears for seven nights in a row your admins and IT are emailed; after 30 days the institution returns to unverified. Nothing is deleted.
+- Teachers who sign up with an address on a verified domain and pick one of your campuses are linked as **domain-verified**, not self-claimed.
+
+## Removing a domain
+
+**Remove** on a domain revokes it. The record is kept in the Activity log. If ChimeEdu verified your institution directly, that verification stays in place regardless of your domains.
