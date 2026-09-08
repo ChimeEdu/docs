@@ -59,7 +59,8 @@
               "teachers/activities/issuance",
               "teachers/activities/graded-mode",
               "teachers/activities/archive-and-restore",
-              "teachers/institution-library"
+              "teachers/institution-library",
+              "teachers/bring-your-school"
             ]
           },
           {
@@ -111,7 +112,8 @@
           {
             "group": "Getting Started",
             "pages": [
-              "staff/introduction"
+              "staff/introduction",
+              "staff/setup-guide"
             ]
           },
           {
@@ -125,6 +127,7 @@
           {
             "group": "Institution",
             "pages": [
+              "staff/verify-your-institution",
               "staff/campuses",
               "staff/performance-and-adoption",
               "staff/activity-log",
