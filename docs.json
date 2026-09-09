@@ -157,6 +157,7 @@
             "group": "Troubleshooting",
             "pages": [
               "help/account-and-login",
+              "help/sign-in-with-a-link",
               "help/activities-and-quizzes",
               "help/accessibility",
               "help/google-drive-picker"
