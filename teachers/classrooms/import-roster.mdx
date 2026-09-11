@@ -1,0 +1,124 @@
+---
+title: "Import a Class Roster and Create Student Accounts"
+sidebarTitle: "Import Roster"
+description: "Upload or paste a class list to invite a whole classroom at once — and create username-and-passcode accounts for students who have no email address."
+keywords:
+  - "roster"
+  - "import roster"
+  - "csv"
+  - "class list"
+  - "bulk invite"
+  - "student accounts"
+  - "username"
+  - "passcode"
+  - "login cards"
+  - "no email"
+  - "under 13"
+---
+
+Typing thirty email addresses into an invitation form is the slow way. **Import roster** takes a class list straight from your student information system or a spreadsheet, shows you exactly what will happen to each row, and then invites everyone in one go. For students who don't have an email address, it can create a ChimeEdu account with a **username and passcode** you hand out on a card.
+
+<Note>
+  Import roster lives on the classroom's **Students** tab, next to the Invite Students form. If you don't see the **Create accounts for students without an email address** option described below, it hasn't been switched on yet — the import itself still works for students with email.
+</Note>
+
+## Prepare your list
+
+One student per row, in any of these shapes:
+
+| Columns | Example |
+|---|---|
+| first name, last name, email | `Ada, Lovelace, ada.lovelace@school.org` |
+| name, email | `Ada Lovelace, ada.lovelace@school.org` |
+| email only | `ada.lovelace@school.org` |
+
+A header row (`first_name,last_name,email`) is recognised and lets the columns come in any order; extra columns like *Grade* are ignored. Commas, tabs and semicolons all work, so a **Save as CSV** from Google Sheets, Excel or Numbers is enough. **Up to 100 students per import** — split a bigger list.
+
+An optional **`parent_email`** column (also read as *Parent* or *Guardian*) is kept on any accounts you create, for your records. It's never used to email anyone.
+
+<Tip>
+  **Download a sample .csv** inside the importer gives you a file with the right headers to fill in.
+</Tip>
+
+## Run the import
+
+<Steps>
+  <Step title="Open the classroom and choose Import roster">
+    On the **Students** tab, click **Import roster** beside the Invite Students heading.
+  </Step>
+  <Step title="Upload the file, or paste the rows">
+    Choose **Upload file** for a `.csv`, `.tsv` or `.txt`, or **Paste** and paste straight from a spreadsheet, then **Preview**.
+  </Step>
+  <Step title="Check the preview">
+    Every row gets a status before anything happens:
+
+    - **Invite** — a valid school email with no ChimeEdu account yet. The student is invited and you get a registration link to share.
+    - **Has account** — the email already belongs to a ChimeEdu account. The student is invited to join your classroom; nobody is ever enrolled without accepting.
+    - **Skip** — already enrolled here, or an invitation is already open.
+    - **Fix** — something to correct: a personal email provider (Gmail, Yahoo, Outlook and the like are not accepted, the same rule as registration), a malformed address, a duplicate row, or a missing email.
+    - **Create** — no email, and you ticked *Create accounts for students without an email address* (below).
+
+    Rows marked **Fix** are simply left out; correct the list and preview again, or go ahead without them.
+  </Step>
+  <Step title="Add a note and confirm consent">
+    The optional note goes into the invitation email. The consent statement is required: you confirm that you hold parent or guardian consent to enroll these students, including anyone under 13, and that your school keeps those records. ChimeEdu stores which wording you accepted and when.
+  </Step>
+  <Step title="Invite">
+    Invitations are emailed immediately. The results screen lists everyone invited, with a **Copy link** per student and **Copy all links** — useful when a school mail filter holds the email, because the link signs the student up directly with your class code attached.
+  </Step>
+</Steps>
+
+## Create accounts for students without an email
+
+Many elementary classes have no student email at all. Tick **Create accounts for students without an email address** in the preview and every row with a name but no email becomes **Create**. When you confirm, each of those students gets:
+
+- a **username** made from their name, like `jdoe27` — always unique, so two J. Smiths get different numbers
+- a **passcode** made of a word and four digits, like `tiger-4827` — easy to read from a card and to type
+
+The consent statement grows to cover creating accounts on the students' behalf. These accounts are treated as under-13 by default: no marketing, no analytics, never added to any mailing list.
+
+<Warning>
+  **Passcodes are shown once.** ChimeEdu stores only a scrambled version, exactly like a password, so they can't be looked up later. Before you close the results screen, use **Copy all**, **Download logins (.csv)** or **Print login cards (PDF)**. If one is lost, you can reset it from the roster at any time.
+</Warning>
+
+**Print login cards (PDF)** gives you eight cards to a page with the class name, the student's name, their username and passcode, and the sign-in address — cut them up and hand them out.
+
+Students sign in at [app.chimeedu.com/login](https://app.chimeedu.com/login) by typing the username in the **Email or username** box and the passcode as the password. Point them to [Sign In with a Username and Passcode](/students/sign-in-with-a-username).
+
+## Managing the accounts you created
+
+On the roster, these students show their username in the **Sign-in** column with a **managed** chip, plus the parent or guardian email if you supplied one. Each row has two extra actions:
+
+- **Reset passcode** — a new passcode appears once in the roster; the old one stops working straight away and the student is signed out everywhere.
+- **Delete account** — removes the account and its work entirely. It's refused if the student is also enrolled in another classroom; use **Remove** to take them out of this class only.
+
+**Login cards** above the roster prints cards for every account you created in this class. Passcodes are only printed for students you reset during the current visit; everyone else's card has a line to write on, since ChimeEdu never keeps the passcode itself.
+
+### What these accounts can and can't do
+
+- They work everywhere a student account works — classrooms, activities, assessments, study guides, graded work.
+- They receive **no email**: no invitations, no results emails, no password-reset links. Results you release show up inside ChimeEdu instead.
+- A student can **add an email later** from Account Settings (school addresses only). The username keeps working, they can then also sign in with the email, and you can still reset their passcode.
+- Search shows them as *Managed account · username*.
+
+## Frequently asked
+
+<AccordionGroup>
+  <Accordion title="A student already has a ChimeEdu account. Will the import enrol them?">
+    No — it invites them. An existing account belongs to its holder, so they accept the invitation (or enter your class code) to join. That's true whether the row says **Has account** or you ticked *Create accounts*; accounts are only created for rows with no email at all.
+  </Accordion>
+  <Accordion title="Why are Gmail and other personal addresses refused?">
+    Student accounts on ChimeEdu use school-issued email so that consent and access stay with the school. For students who genuinely have no school email, create an account instead — no email is needed at all.
+  </Accordion>
+  <Accordion title="Can I run the same list again?">
+    Yes. Students who are already enrolled or already invited come back as **Skip**, so nothing is duplicated. There's a limit of 10 imports per hour per teacher.
+  </Accordion>
+  <Accordion title="A student's username is awkward. Can I change it?">
+    Usernames are yours to edit for accounts you created — letters and digits, starting with a letter — provided nobody else has it. Sign-in is case-insensitive.
+  </Accordion>
+  <Accordion title="Where is the consent record?">
+    Each invitation and each created account stores the version of the consent statement you accepted, your account, and the time. Your school keeps the underlying parent or guardian consent.
+  </Accordion>
+</AccordionGroup>
+
+See also [Enroll Students](/teachers/classrooms/enroll-students) for class codes, links and QR codes.
