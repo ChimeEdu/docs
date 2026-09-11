@@ -42,6 +42,7 @@
               "teachers/classrooms/overview",
               "teachers/classrooms/create-classroom",
               "teachers/classrooms/enroll-students",
+              "teachers/classrooms/import-roster",
               "teachers/classrooms/google-drive"
             ]
           },
@@ -89,6 +90,7 @@
             "pages": [
               "students/introduction",
               "students/create-account",
+              "students/sign-in-with-a-username",
               "students/join-classroom"
             ]
           },
