@@ -158,6 +158,7 @@
             "pages": [
               "help/account-and-login",
               "help/sign-in-with-a-link",
+              "help/sign-in-with-google",
               "help/activities-and-quizzes",
               "help/accessibility",
               "help/google-drive-picker"
