@@ -44,6 +44,7 @@
               "teachers/classrooms/enroll-students",
               "teachers/classrooms/import-roster",
               "teachers/classrooms/archive-a-classroom",
+              "teachers/classrooms/schedule-and-announce",
               "teachers/classrooms/google-drive"
             ]
           },
