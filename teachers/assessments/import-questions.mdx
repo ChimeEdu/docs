@@ -37,9 +37,15 @@ One question per row. **Download a sample .csv** inside the import window gives 
 | `question` | The question text (required) |
 | `option_a` … `option_d` | Up to six answer options (`option_e`, `option_f` also work). Leave blank for written questions |
 | `correct` | The letter of the correct option (`B`), or `true` / `false` for a true/false question. Numbers (`2`) and the option's own text also work |
-| `type` | *Assessments only, optional.* `multiple_choice`, `true_false`, `short_answer` or `long_answer`. Leave it out and ChimeEdu works it out from the row: two options reading True/False → true/false; any other options → multiple choice; no options → short answer |
+| `type` | *Assessments only, optional.* `multiple_choice`, `true_false`, `short_answer`, `long_answer` — and, where the newer types are switched on, `multi_select`, `numeric`, `matching`, `ordering`. Leave it out and ChimeEdu works it out from the row: two options reading True/False → true/false; any other options → multiple choice (or multi-select when the correct column lists several letters, e.g. `A;C`); no options → short answer |
 | `points` | *Assessments only, optional.* Point value, e.g. `2` or `0.5` |
 | `time_limit` | *Optional.* Seconds per question. On a quiz this is the countdown (30 if left blank); on an assessment it's the optional per-question timer |
+
+For the newer types, the same columns do double duty:
+
+- **numeric** — put the expected number in `correct`, with an optional tolerance and unit: `9.81 ±0.05 m/s²`.
+- **matching** — write each pair as `left=right` in the option columns (or in `correct`, separated by `;`); an option without `=` becomes an extra right-hand distractor.
+- **ordering** — list the items in `option_a` … `option_f` in the correct order, or in any order with `correct` giving the sequence (`B;A;C`).
 
 A header row is recognised automatically, and commas, tabs and semicolons are all accepted as separators. Quotes around a value are fine (use them when a question contains a comma).
 
@@ -86,7 +92,7 @@ Assessments copy from assessments and quizzes copy from quizzes, because the two
 
 - Up to **100 questions per import**, and up to **100 questions per assessment or quiz** in total. The preview tells you how many more will fit.
 - **Quizzes** accept multiple choice and true/false only. Written-answer rows show as **Fix** when importing into a quiz.
-- **One correct answer per question** for now. Rows with several correct options are skipped until multi-select questions arrive.
+- **Several correct answers** need the multi-select type, which is rolling out gradually. Until it's switched on for your account, rows with more than one correct option show as **Fix**.
 - Questions with images (image-select, or featured images) can't be imported from a file — add those by hand, or copy them from another assessment where they already exist.
 - An assessment that is **published and already has submissions** is locked, so it can't receive imports either. Close it or duplicate it first.
 
