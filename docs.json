@@ -70,6 +70,7 @@
             "group": "Assessments & Guides",
             "pages": [
               "teachers/assessments",
+              "teachers/assessments/import-questions",
               "teachers/study-guides",
               "teachers/experiences"
             ]
