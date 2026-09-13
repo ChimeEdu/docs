@@ -1,0 +1,85 @@
+---
+title: "Use the Gradebook to See Every Grade in a Classroom"
+sidebarTitle: "Gradebook"
+description: "One grid of every student and every assessment or graded activity in a classroom, with categories and weights, class averages, and CSV export for your district gradebook."
+keywords:
+  - "gradebook"
+  - "grades"
+  - "weighted average"
+  - "categories"
+  - "export grades"
+---
+
+The **Grades** tab on a classroom shows every student and every assignment in one grid: each linked assessment and each activity with Graded Mode on. Cells show the score, a category subtotal sits after each group, and a weighted average ends every row. Two CSV exports take the whole thing to your district gradebook.
+
+<Note>
+The gradebook is part of the **Plus** and **Premium** plans and is rolling out gradually. If the Grades tab isn't on your classroom yet, it isn't switched on for your account.
+</Note>
+
+## What appears in the grid
+
+- **Students** — everyone enrolled in the classroom, one row each.
+- **Assessments** — every assessment linked to the classroom that is published or closed. Drafts aren't assignments yet, so they stay out.
+- **Graded activities** — every activity in the classroom with Graded Mode on (maps, timelines, graphs, diagrams, flash cards, fill-in-the-blank).
+
+Columns are ordered by due date. Live quizzes don't keep per-student results, so they never appear.
+
+## Reading a cell
+
+| Cell | Meaning |
+| --- | --- |
+| **85%** with a letter | Fully graded. The letter is the one you gave; assessments also show the percent from every scored question |
+| **85%** with a small amber dot | Graded, but the results haven't been sent to the student yet |
+| **Needs scoring** | The student submitted, but a written question still has no score. Click through to score it; the percent appears once every question is scored |
+| **Submitted** / **In progress** | Work handed in and waiting for a grade, or still being worked on |
+| **Not submitted** / **Not started** | Nothing yet, and the due date hasn't passed |
+| **Missing** / **Missed** | Nothing submitted and the due date has passed. An assessment whose missed-work setting is "count as zero" scores 0 once its late window closes |
+| **Not assigned** | You unassigned this student from that assignment; it doesn't count |
+
+Clicking any cell opens the submission or the activity's grading panel. Grades are entered there, never in the grid.
+
+<Tip>
+Assessment percents are worked out from the points on every question, exactly as the student's results page shows them — so a teacher-scored essay counts, and a half-scored assessment never shows a misleading percent.
+</Tip>
+
+## Averages
+
+- **Student average** — the number at the end of each row, with a suggested letter under the common US scale. Unscored, missing-without-a-zero-rule, and not-assigned cells are left out, and "n of m" tells you how many assignments counted.
+- **Class average** — the footer row, per column and overall.
+
+## Categories and weights
+
+Click **Categories** to create groups such as *Tests · 60* and *Classwork · 40*. Weights are relative, so they don't need to add up to 100. Then use the small tag under each column header to put that assignment into a category.
+
+Once any category exists:
+
+- the grid groups columns by category and adds a **subtotal** column after each group;
+- the student average is the **weighted** mean of the category subtotals;
+- a category with nothing graded yet is left out of the average rather than dragging it to zero;
+- uncategorised columns are still shown but don't count. Assign them, or delete all categories to go back to an equal-weight average.
+
+You can have up to 12 categories per classroom.
+
+## Exporting
+
+- **Export grid** — one row per student, one column per assignment with the percent, category subtotals, and the average. A second header row carries the points possible, and a column is marked `[unreleased]` while any graded result in it hasn't been sent to students. Pastes straight into most district gradebooks.
+- **Export detailed** — one row per student and assignment with the state, points earned and possible, percent, letter, whether results were released, and when it was submitted. Best for spreadsheets and records.
+
+Both include every student in the roster, including those with nothing graded yet.
+
+## Frequently asked
+
+<AccordionGroup>
+  <Accordion title="Can students see the gradebook?">
+    No. Students see their own released results on their results pages, exactly as before. The grid is a teacher view, and it shows you grades whether or not you've sent them yet — the amber dot marks the ones students can't see.
+  </Accordion>
+  <Accordion title="A student submitted an assessment twice — which one counts?">
+    The most recent submission. Open the assessment's submissions list to see both.
+  </Accordion>
+  <Accordion title="Does the gradebook still work on an archived classroom?">
+    Yes. Archived classrooms keep their Grades tab and exports, so end-of-year records stay reachable.
+  </Accordion>
+  <Accordion title="Why is an activity missing from the grid?">
+    Only activities with **Graded Mode** switched on appear. Open the activity's Edit Details, turn on Graded Mode and set a due date, and it joins the grid.
+  </Accordion>
+</AccordionGroup>
