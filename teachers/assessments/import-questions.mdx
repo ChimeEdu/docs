@@ -1,0 +1,108 @@
+---
+title: "Import Questions From a Spreadsheet, Pasted Text or Another Assessment"
+sidebarTitle: "Import Questions"
+description: "Bulk-add questions to a ChimeEdu assessment or quiz from a CSV file, a Kahoot export, plain pasted text, or by copying them from another assessment or quiz you own."
+keywords:
+  - "import questions"
+  - "csv"
+  - "kahoot"
+  - "copy questions"
+  - "question bank"
+---
+
+Typing questions one at a time is fine for a five-question check-in. For anything longer — or for questions you already have in a spreadsheet, a Kahoot export or an old worksheet — use **Import questions**. It works the same way on **assessments** and on **quizzes**, and it never overwrites anything: imported questions are added after the ones you already have.
+
+<Note>
+Import is rolling out gradually. If you don't see the **Import questions** button yet, it isn't switched on for your account — nothing is wrong with your assessment.
+</Note>
+
+## Where to find it
+
+Open the assessment (or the quiz activity), open **Questions**, and click **Import questions** next to **Add Question**. You'll see three ways to bring questions in:
+
+| Tab | Use it when |
+| --- | --- |
+| **Upload file** | You have a `.csv`, `.tsv` or `.txt` file — the ChimeEdu template, or a Kahoot spreadsheet export |
+| **Paste** | You want to paste rows from a spreadsheet, or plain text straight from a worksheet or a document |
+| **Copy from another …** | You already built these questions in another assessment or quiz you own |
+
+Whichever you pick, you always get a **preview** first. Nothing is added until you click **Import**.
+
+## The spreadsheet layout
+
+One question per row. **Download a sample .csv** inside the import window gives you the exact template. The columns are:
+
+| Column | What goes in it |
+| --- | --- |
+| `question` | The question text (required) |
+| `option_a` … `option_d` | Up to six answer options (`option_e`, `option_f` also work). Leave blank for written questions |
+| `correct` | The letter of the correct option (`B`), or `true` / `false` for a true/false question. Numbers (`2`) and the option's own text also work |
+| `type` | *Assessments only, optional.* `multiple_choice`, `true_false`, `short_answer` or `long_answer`. Leave it out and ChimeEdu works it out from the row: two options reading True/False → true/false; any other options → multiple choice; no options → short answer |
+| `points` | *Assessments only, optional.* Point value, e.g. `2` or `0.5` |
+| `time_limit` | *Optional.* Seconds per question. On a quiz this is the countdown (30 if left blank); on an assessment it's the optional per-question timer |
+
+A header row is recognised automatically, and commas, tabs and semicolons are all accepted as separators. Quotes around a value are fine (use them when a question contains a comma).
+
+<Tip>
+**Coming from Kahoot?** Export your kahoot as a spreadsheet and upload it as-is. ChimeEdu recognises the `Question`, `Answer 1` – `Answer 4`, `Time limit` and `Correct answer(s)` columns.
+</Tip>
+
+## Pasting plain text
+
+If your questions live in a document rather than a spreadsheet, paste them as blocks separated by a blank line. The first line of a block is the question; the lines under it are the options. Mark the correct one with a `*`, or add an `Answer:` line:
+
+```text
+1. Which planet is closest to the Sun?
+A) Venus
+*B) Mercury
+C) Earth
+
+2. Water boils at 100 °C at sea level.
+- True
+- False
+Answer: true
+
+3. Explain why the sky is blue.
+```
+
+Options can be written `A)`, `a.`, `(a)` or as a dash list. A block with no options becomes a written (short-answer) question on an assessment. Numbering at the start of a question (`1.`, `Q2)`) is stripped.
+
+## Reading the preview
+
+Every row shows the question, its type, its options (the correct one is ticked) and a status:
+
+- **Ready** — will be imported exactly as shown.
+- **Fix** — will be skipped, with the reason beside it. Common reasons: no correct option marked, more than one option marked correct, a question with no text, or a type the target doesn't support.
+
+Fix the rows in your file or your pasted text and preview again; only **Ready** rows are imported. The import button tells you how many that is.
+
+## Copying from another assessment or quiz
+
+Choose the **Copy from another …** tab, pick the source, and tick the questions you want (everything is ticked by default). Copies are independent — editing the copy never changes the original, and the original keeps its own submissions and results.
+
+Assessments copy from assessments and quizzes copy from quizzes, because the two use different question formats.
+
+## Limits and rules
+
+- Up to **100 questions per import**, and up to **100 questions per assessment or quiz** in total. The preview tells you how many more will fit.
+- **Quizzes** accept multiple choice and true/false only. Written-answer rows show as **Fix** when importing into a quiz.
+- **One correct answer per question** for now. Rows with several correct options are skipped until multi-select questions arrive.
+- Questions with images (image-select, or featured images) can't be imported from a file — add those by hand, or copy them from another assessment where they already exist.
+- An assessment that is **published and already has submissions** is locked, so it can't receive imports either. Close it or duplicate it first.
+
+## Frequently asked
+
+<AccordionGroup>
+  <Accordion title="Can I import into an assessment that already has questions?">
+    Yes. Imported questions are appended after your existing ones, in the order they appear in the file. Reorder them afterwards in the questions list if you like.
+  </Accordion>
+  <Accordion title="Does importing send anything to students?">
+    No. Importing only edits the question list. Students see the questions when the assessment is assigned and open, exactly as if you had typed them.
+  </Accordion>
+  <Accordion title="My spreadsheet has the answers in a different column order — does that matter?">
+    No. ChimeEdu reads the header row, so the columns can be in any order. Only the column names matter.
+  </Accordion>
+  <Accordion title="Where do points and timers come from when the file doesn't have them?">
+    Assessment questions default to 1 point and no timer. Quiz questions default to a 30-second countdown and 100 points, which you can change per question after the import.
+  </Accordion>
+</AccordionGroup>
