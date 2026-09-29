@@ -31,15 +31,63 @@ Open a real quiz as a visitor — play it solo, or host a live round and join it
   </Step>
 
   <Step title="Add your questions">
-    Quiz questions come in three types: **multiple choice** (one correct answer — players tap one card), **true/false**, and **multi-select** (several correct answers — players tick every card they think is right, then submit; it scores only when their set matches exactly). Multi-select is rolling out gradually; if it isn't in your type list yet, it's not switched on for your account.
+    Quiz questions come in four types:
 
-    You can also bring questions in from a spreadsheet, a Kahoot export, pasted text or another quiz with **Import questions** — see [Import Questions](/teachers/assessments/import-questions).
+    * **Multiple choice** — one correct answer; players tap one card.
+    * **True/false**.
+    * **Multi-select** — several correct answers; players tick every card they think is right, then submit. It scores only when their set matches exactly.
+    * **Image** — a large picture with your question underneath, answered like multiple choice. See [Image questions](#image-questions).
+
+    Multiple choice and Image questions can also be answered by **typing** instead of tapping a card — see [Type it in answers](#type-it-in-answers).
+
+    You can also bring questions in from a spreadsheet, a Kahoot export, pasted text or another quiz with **Import questions** — see [Import Questions](/teachers/assessments/import-questions). Imported questions arrive as tap-a-card questions; add pictures and typed answers in the editor afterwards.
   </Step>
 
   <Step title="Set timing and scoring per question">
-    Each question carries its own countdown (30 seconds by default) and its own point value (100 by default). Adjust them question by question — a quick recall question and a think-it-through question don't deserve the same clock.
+    Each question carries its own countdown (30 seconds by default) and its own point value (100 by default). Adjust them question by question — a quick recall question and a think-it-through question don't deserve the same clock. When you switch a question to **Type it in**, a 30-second timer you haven't changed becomes 45 seconds, because typing takes longer than tapping.
   </Step>
 </Steps>
+
+## Image questions
+
+An Image question puts a picture front and centre — a map, a painting, a graph, a specimen — with your question and the answer cards alongside it. Write the question so it refers to the picture ("Which country is highlighted?", "What is this organ called?").
+
+In the question editor, choose **Image** as the question type, then:
+
+1. **Add the picture.** Choose **Upload** (JPEG, PNG, GIF or WebP, up to 10 MB) or paste an image link that starts with `https://`.
+2. **Describe it.** **Image description (alt text)** is required. Describe what students need to see to answer — screen readers read it aloud, and it appears in place of the picture if the picture can't load.
+3. **Add your answer cards** and mark the correct one, just like multiple choice.
+
+Image questions score exactly like multiple choice. On the projector and on students' devices, the picture, the question and the answers stay on screen together. Anyone can select the picture to see it full size, then close it to get back to the answers.
+
+<Note>
+  You need to be signed in to add pictures. The quick no-account quiz maker (Quick Activity) offers multiple choice and true/false only, although it plays any question.
+</Note>
+
+## Type it in answers
+
+With **Type it in**, students type their answer instead of choosing from cards. It works on **multiple choice** and **Image** questions.
+
+In the question editor, set **Answer type** to **Type it in**, then:
+
+1. **Answer** — the main correct answer. This is the one the whole class sees when you reveal the results.
+2. **Also accept** (optional) — up to 10 other answers that count as correct, such as an abbreviation, a different spelling, or "USA" as well as "United States".
+
+### How typed answers are marked
+
+ChimeEdu marks each answer the moment a student locks it in, using the same forgiving matching as Fill in the Blank:
+
+* **Capital letters, accents, apostrophes, punctuation and extra spaces don't matter.** "Saint-Étienne" and "saint etienne" are the same answer.
+* **A close spelling earns 75% of the points.** A one-letter slip on a longer word ("photosynthsis") is a near miss, not a wrong answer.
+* **Numbers must be exact.** 3.14 doesn't match 314, and −5 doesn't match 5. Small forms are treated as equal, like .5 and 0.5, or 1,000 and 1000.
+* **Short answers and answers with digits get no near-miss credit.** An answer shorter than 4 characters, or one containing a number, has to match exactly — otherwise "Na" would pass for "Ne".
+
+<Tip>
+  Letters next to numbers are matched loosely, so "COVID-19" and "covid19" are the same answer — and so are `x-5` and `x5`. If that difference is the point of the question, use answer cards instead of Type it in.
+</Tip>
+
+Only a student's first locked-in answer counts. Students never see what classmates typed. When you reveal the results, everyone sees your main answer, and each student sees their own result on their device.
+
 
 ## Hosting a session
 
@@ -58,6 +106,8 @@ Open a real quiz as a visitor — play it solo, or host a live round and join it
 
   <Step title="Run each question">
     Students answer on their devices while the timer runs. When you choose **Show Results**, everyone sees whether they were right, the correct answer is revealed, and the leaderboard updates on your screen. (If the timer runs out first, results are revealed automatically.)
+
+    For a **Type it in** question, your screen shows "Students type their answer on their device" and how many have answered, instead of answer cards. The reveal shows your main answer.
   </Step>
 
   <Step title="Move on">
@@ -95,6 +145,12 @@ Open a real quiz as a visitor — play it solo, or host a live round and join it
 ## Accessibility and accommodations
 
 Quizzes have an **accommodation mode** you can enable on the activity. It multiplies every question's timer by three — for the whole room, not per student. Use it for classes where extra processing time is appropriate; for individual extended time, an assessment is the better tool.
+
+A few things work for every student without any setup:
+
+* **Screen readers announce each new question** on students' devices. For an Image question, they also read your image description.
+* **Pictures can be opened full size** from the keyboard or by touch, and closed with **Escape**.
+* **Typed answers forgive spelling slips** with partial credit, so a student who knows the answer but can't spell it perfectly still scores.
 
 ## Frequently asked
 
