@@ -1,0 +1,127 @@
+---
+title: "Set Dates by Class"
+sidebarTitle: "Dates by Class"
+description: "Give every class its own opening time and due date for the same activity, set them all at once with Undo, and understand the in-app \"Now open\" notice students get when work opens."
+keywords:
+  - "dates by class"
+  - "per-class dates"
+  - "available from"
+  - "due date"
+  - "schedule"
+  - "now open"
+  - "notification"
+  - "apply to all"
+  - "several classes"
+---
+
+When an activity is in more than one class, each class can open it and be due at its own time. Period 1 can start on Monday while Period 3 starts on Wednesday, and each class's students only ever see their own class's dates.
+
+The dates live in one table, **Dates by class**, on the activity's **Students** section under **When**. You see the same table for an activity in a single class, with one row.
+
+## The Dates by class table
+
+There's one row for each class the activity is in:
+
+| Column | What it shows |
+| --- | --- |
+| **Class** | The class name. The home class has a **Home** label |
+| **Available from** | When the activity opens for that class. Empty means it's open now |
+| **Due** | When work is due for that class. This column appears only when the activity is graded |
+| **Status** | **Scheduled**, **Open**, **Closed** (graded and past its due date), or **Class archived**, with a short line such as *opens in 2 days* or *due today, 3:00 PM* |
+
+The status updates by itself while the page is open.
+
+## Change one class's dates
+
+<Steps>
+  <Step title="Type the new date and time">
+    Edit **Available from** or **Due** in that class's row.
+  </Step>
+  <Step title="Leave the row, or press Enter">
+    The row saves when you move out of it or press **Enter** in one of its fields. Press **Escape** to put back the saved dates instead.
+  </Step>
+</Steps>
+
+To open the activity for a class straight away, clear its **Available from** with the **✕** button.
+
+**Available from** has to be before the due date. If a row has a problem, it keeps what you typed, shows a **Not saved** label and the reason, and sends nothing until you fix it.
+
+## Set every class at once
+
+Above the table, **Set every class at once** sets the same dates for every class:
+
+1. Enter an **Available from** (or press **Open now**) and, if the activity is graded, a **Due** date.
+2. Press **Apply to all** and confirm with **Apply**.
+3. A line confirms *Dates applied to N classes*, with an **Undo** button that puts every class's previous dates back.
+
+**Use for all** on a class's row copies that row's dates into **Set every class at once**, ready to apply. Archived classes are left out.
+
+## Due dates and grading
+
+While an activity is graded, **every** class needs a due date.
+
+- When you turn grading on under **Results › Grading**, ChimeEdu asks **When is it due?** and sets that date for every class. Change it for individual classes in the table afterwards.
+- With grading on, the **Due date & time** row under **Results › Grading** points to **Students › When** and shows the range of due dates.
+- With grading off, the table has no **Due** column.
+
+Students in a class can't submit after that class's due date, unless you reopen their work. See [Graded Mode](/teachers/activities/graded-mode).
+
+## Time zones
+
+Dates are exact moments, entered in your own local time. If a classroom is set to a different time zone from yours, its row also shows the time there, so you can check what its students will see.
+
+## Show a locked preview
+
+**Show a locked preview**, under the table, is one setting for the whole activity. It appears while at least one class is scheduled. When it's on, students in a class that hasn't opened yet see the activity listed as *Coming soon*, with its opening time, but they can't open it. When it's off, the activity stays hidden from them until it opens.
+
+## Notices when a class opens
+
+When a scheduled class's **Available from** time arrives, the students in that class get an in-app **Now open** notification that links to the activity. This applies to every scheduled activity, whether it's in one class or several.
+
+- It's **in-app only**; no email is sent.
+- Each student gets **at most one** "Now open" notice per activity. Moving the date and opening it again doesn't send another.
+- Opening a class early, by clearing its **Available from** date or using **Open now**, sends the notice straight away.
+- A student who's in two of the activity's classes hears only about the class they count in. See [Use One Activity in Several Classes](/teachers/activities/several-classes#students-in-two-of-your-classes).
+- On a Per-Student or Group Assignment activity, only assigned students are notified, and in Group Assignment mode only students who are in a group.
+- Adding a class to an activity that's already open sends nothing. Its students simply find it on their dashboard.
+
+## What students see
+
+- Students see **their own class's** dates on their dashboard, their classroom page, and in the activity.
+- Someone who opens the activity from a class's classroom page link sees that class's dates.
+- Before their class opens, students see nothing, or a *Coming soon* card if **Show a locked preview** is on.
+
+## In the classic editor
+
+The classic editor's **Available from** and due date fields still work while every class has the same dates. A note says they apply to all of the activity's classes, and saving them changes every class. Once the classes have different dates, those fields become read-only and point you to the **Dates by class** table.
+
+## Common questions
+
+<AccordionGroup>
+  <Accordion title="Do assessments and study guides have dates by class?">
+    No. Assessments and study guides keep one **Available from** time for all their classrooms. See [Schedule Work and Post Announcements](/teachers/classrooms/schedule-and-announce).
+  </Accordion>
+
+  <Accordion title="I added a class. What dates does it get?">
+    It starts with the home class's dates. Change them in its row.
+  </Accordion>
+
+  <Accordion title="Why does one row have no date fields?">
+    That class is archived, and its row says **Class archived**. Restore the class to change its dates.
+  </Accordion>
+
+  <Accordion title="Can I extend the due date for one class only?">
+    Yes. Change the **Due** date in that class's row. To give one student more time, reopen their submission instead.
+  </Accordion>
+</AccordionGroup>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Use One Activity in Several Classes" icon="layer-group" href="/teachers/activities/several-classes">
+    Add classes, choose the home class, and remove classes safely.
+  </Card>
+  <Card title="Schedule Work and Post Announcements" icon="calendar" href="/teachers/classrooms/schedule-and-announce">
+    Scheduling for assessments and study guides, and class announcements.
+  </Card>
+</CardGroup>
