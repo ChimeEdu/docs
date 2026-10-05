@@ -6,24 +6,45 @@ description: "Build interactive map activities with pins, rich descriptions, and
 
 Map activities anchor knowledge to real places. You set a base map, choose the default view and zoom level, place pins anywhere on the globe, and students explore the content at their own pace — opening pin cards to read descriptions, view images, and build the spatial understanding that a textbook passage simply cannot provide.
 
+## Try it live
+
+Explore a finished map exactly as a student would — open pin cards, try Student Mode, drop a pin. Nothing you do is saved. Every example is a real activity in read-only mode, no account needed.
+
+<CardGroup cols={2}>
+  <Card title="The Silk Road — geographic map" icon="play" href="https://app.chimeedu.com/examples/map-geographic">
+    Twelve pins along the trade routes on a real-world basemap.
+  </Card>
+  <Card title="Vesuvius, AD 79 — area map" icon="play" href="https://app.chimeedu.com/examples/map-area">
+    A measured 30 km grid around the volcano, with distance rings.
+  </Card>
+  <Card title="All live examples" icon="grid-2" href="https://chimeedu.com/features/examples">
+    One example for every activity type, with more on the way.
+  </Card>
+</CardGroup>
+
 ## What You Can Do with Maps
 
 <CardGroup cols={2}>
   <Card title="Interactive Pins" icon="map-pin">
     Place any number of pins anywhere on the map. Each one opens a card with rich content — students click to explore, not just read.
   </Card>
+
   <Card title="Rich Pin Cards" icon="image">
     Each pin card supports formatted text, embedded images, and detailed descriptions. Give every location as much context as it deserves.
   </Card>
+
   <Card title="Pan and Zoom" icon="magnifying-glass">
     Students pan and zoom freely across the map, shifting perspective from street-level detail to a continental overview.
   </Card>
+
   <Card title="Any Geography" icon="globe">
     Set the default view to any location on Earth — a single city, a country, a continent, or the whole globe. There are no geographic constraints.
   </Card>
+
   <Card title="Works Across Subjects" icon="book-open">
     History, geography, science, literature, current events — any subject with a sense of place benefits from the map format.
   </Card>
+
   <Card title="Published to Your Classroom" icon="chalkboard-user">
     Maps go straight to your classroom feed. Students access them from their dashboard — no separate link, no external platform.
   </Card>
@@ -36,7 +57,10 @@ Map activities anchor knowledge to real places. You set a base map, choose the d
     From your teacher dashboard, click **New Activity** and select **Map**.
   </Step>
   <Step title="Set the default view">
-    Search for a location or drag the map to the area your activity covers. Set the default zoom level so students open the activity with the right geographic context already in view.
+    Search for a location or drag the map to the area your activity covers. As you type, the search suggests places near where the map is centred — use the arrow keys and **Enter** to pick one, or press **Search** to look up exactly what you typed. Set the default zoom level so students open the activity with the right geographic context already in view.
+  </Step>
+  <Step title="Choose a basemap (optional)">
+    Under **Basemap** in Map Settings, pick **Standard**, **Muted**, **Hybrid**, or **Satellite**. Students see the basemap you choose, and it works with Area grids too. Hybrid and Satellite look the same in dark themes, because imagery has no dark version.
   </Step>
   <Step title="Add pins">
     Click anywhere on the map to drop a pin. Reposition it by dragging, or delete it and start again — pins are fully editable at any time.
@@ -45,7 +69,7 @@ Map activities anchor knowledge to real places. You set a base map, choose the d
     For every pin, add a **title**, a **description** (formatted text is supported), and one or more **images**. The more context you provide, the richer the student experience.
   </Step>
   <Step title="Save the map">
-    The classroom is chosen from a dropdown when you create the activity — there is no separate publish step. The map is available to that classroom straight away, and pins you add or edit are live as you save them.
+    You tick one or more classrooms when you create the activity — there is no separate publish step. The map is available to those classrooms straight away, and pins you add or edit are live as you save them.
   </Step>
 </Steps>
 
@@ -64,8 +88,110 @@ When a student opens a Map Activity, they land on the default view you configure
 Students move at their own pace. There is no timer and no set order — the activity is designed for independent exploration.
 
 <Note>
-  Keyboard navigation between pins works on standard geographic maps. On maps that use a custom **image or SVG background**, the pins can't currently be reached by keyboard — for those, the **list view** is the accessible route, and it carries exactly the same pin content. If you build an image-based map, mention list view to your students.
+  Keyboard navigation between pins works on standard geographic maps: **Tab** reaches each pin, **Enter** opens it, the **arrow keys** pan the map and **\+** / **−** zoom it, and a directional pad in the bottom-left corner does the same with a mouse or touch. On maps that use a custom **image or SVG background**, the pins can't currently be reached by keyboard — for those, the **list view** is the accessible route, and it carries exactly the same pin content. If you build an image-based map, mention list view to your students.
 </Note>
+
+<Note>
+  Real-world maps, the static map previews on Experience pages, and location search are provided by **Apple Maps**. If your school filters web traffic, ask IT to allow `cdn.apple-mapkit.com` and `*.apple-mapkit.com` — the full list is on the **IT network requirements** page that institution admins can open from the staff dashboard. If those hosts are blocked, the map shows a "could not be loaded on this network" notice with the coordinates, and the **list view** still works, so nothing is lost.
+</Note>
+
+## Let students add their own pins
+
+By default students read the pins you place. On a **shared** map you can also let them **add their own pins** — great for collaborative research, an "add a place from the reading" task, or a class-built map that grows over a unit.
+
+Students **enrolled in one of the map's classrooms** just open the map and click **Student Mode** — they can start placing pins right away, **no password needed**. Their pins sit alongside yours, and your pins stay yours to manage.
+
+<Steps>
+  <Step title="Link the map to your classroom">
+    Student contributions run on classroom enrollment, so the map needs to be in at least one classroom with your students in it. See [Enroll Students](/teachers/classrooms/enroll-students).
+  </Step>
+  <Step title="Students click Student Mode">
+    A signed-in, enrolled student opens the map and clicks **Student Mode**, then adds pins using the same title, description, and image fields you use.
+  </Step>
+  <Step title="(Optional) invite people from outside your class">
+    To let students who **aren't** enrolled contribute, open the activity's settings and set a **Student Mode password** under **Access Settings**, then share it with them. They enter it once to unlock editing.
+  </Step>
+</Steps>
+
+<Note>
+  The **Student Mode password is only for contributors outside the map's classrooms.** Your enrolled students never need it. If you don't set a password, only your enrolled students — and you — can add pins; everyone else sees a read-only map. Once the map is in two or more classrooms, pins added with the password are seen only by you and other visitors — never by your classes.
+</Note>
+
+<Tip>
+  You can change or remove the Student Mode password at any time from **Access Settings** — the panel shows a badge when a password is set. For security it can't be shown back to you, so if you forget it, just set a new one.
+</Tip>
+
+<Note>
+  This is different from **Per-Student** and **Group** issuance below. Student Mode is one **shared** map that many students add to together; issuance gives each student (or group) their **own** separate copy. Pick shared when you want a single collaborative map, and issuance when you want everyone to build their own.
+</Note>
+
+## Maps in several classes
+
+A shared map can be in more than one of your classrooms. Once it's in two or more, it gets **class layers**: your pins are seen by every class, each class's pins are seen only by that class and you, and visitors with the Student Mode password have a layer of their own. If the map already has student pins when you add the second class, ChimeEdu asks who should see each one. See [Class Layers on Shared Maps](/teachers/activities/map-class-layers).
+
+## Let students choose areas instead of pins
+
+On a real-world map you can switch the **entry method** from pins to **Selection**. Instead of dropping a pin anywhere, students choose an **area** (a country, a state, a county and so on) and add one entry for it. It works well for "research one country each", "map the counties of our state" or a region-by-region survey.
+
+<Steps>
+  <Step title="Open Map Settings">
+    On the activity page, click **Map Settings**.
+  </Step>
+  <Step title="Choose Selection">
+    Under **Entry Method**, pick **Selection**.
+  </Step>
+  <Step title="Pick the area scale">
+    Choose one **Area scale**: Town/Village, City, County, State/Province, Country, Region or Continent. Every entry on the map uses that one scale.
+  </Step>
+  <Step title="Show area outlines (optional)">
+    **Show area outlines** draws a faint border around every area. It's on by default where the map doesn't already draw those borders (towns, cities, counties, regions and continents) and off where it does (countries and states).
+  </Step>
+  <Step title="Save">
+    Click **Save settings**.
+  </Step>
+</Steps>
+
+### How choosing an area works
+
+- Moving over the map highlights each area and shows its name. Click an area to choose it. On a touch screen, tap once to highlight an area and tap again to choose it.
+- The new entry's title starts as the area's name, and you can change it. The area's name always shows on the entry.
+- Each area holds **one** entry. Clicking an area that already has one opens that entry. Filled areas are tinted and carry a marker.
+- The **Search** button finds an area by name. It's also the keyboard route: type a name, use the arrow keys, and press **Enter**.
+- Entries can't be dragged. Each one stays at the centre of its area.
+
+### Scales and what they cover
+
+| Scale | Covers |
+|---|---|
+| Continent | Africa, Antarctica, Asia, Australia & Oceania, Europe, North America and South America |
+| Region | The UN's world regions, such as Northern Africa, Western Europe, Latin America and the Caribbean, and South-eastern Asia, plus Northern Asia |
+| Country | Every country and territory |
+| State/Province | States, provinces and their equivalents worldwide |
+| County | US counties and their equivalents |
+| City | US places with 50,000 people or more |
+| Town/Village | Every US town, village and census-designated place |
+
+<Note>
+  County, City and Town/Village cover the **United States only**. Borders come from Natural Earth (worldwide) and the US Census Bureau (US counties and places). Country borders follow Natural Earth's US point of view.
+</Note>
+
+### Changing the scale later
+
+You can change the scale, or switch back to pins, at any time. Existing entries stay on the map with the areas they were made for, so nothing is deleted. New entries use the new setting. Before you save, **Map Settings** tells you how many entries use a different scale.
+
+### With per-student and group maps
+
+Selection works with Per-Student and Group issuance, and each student or group fills their own map. Areas you fill in **Teacher Mode** are **examples**: every student sees them read-only and can't choose those areas. Use this for a worked example, or to keep an area off-limits.
+
+<Note>
+  Selection is available on real-world maps only. It isn't available on Area grids or on maps with an image or SVG background.
+</Note>
+
+## Give each student their own map
+
+By default a map is one artifact your whole class shares. On Plus and Premium you can issue it **per student** — every student builds their own map, with your pins showing as a locked starting layer — or by **group**, where students placed into groups (A–Z) co-edit one map together. A **Students** panel on the activity page tracks who has started work.
+
+See [Per-Student & Groups](/teachers/activities/issuance) for the full walkthrough.
 
 ## Subject Ideas
 
@@ -75,18 +201,23 @@ Not sure where to start? Here are some tried-and-tested uses across the curricul
   <Card title="History" icon="landmark">
     Trace military campaigns, map the expansion of empires, mark the sites of key battles, or chart migration routes across centuries.
   </Card>
+
   <Card title="Geography" icon="mountain">
     Identify physical features such as mountain ranges, river systems, and tectonic boundaries, or explore human geography topics like population density and urban growth.
   </Card>
+
   <Card title="Science" icon="flask">
     Plot ecosystems and biomes, map fieldwork data collection sites, track the spread of a species, or visualize climate zones across the globe.
   </Card>
+
   <Card title="Literature" icon="book">
     Pin the settings of a novel, chart a character's journey, or map the real-world locations that inspired an author's writing.
   </Card>
+
   <Card title="Modern Studies" icon="newspaper">
     Track the spread of a policy across different countries, map international organizations and their member states, or visualize global data from current events.
   </Card>
+
   <Card title="Any subject with place" icon="location-dot">
     If your content happens somewhere in the world — at any scale — a Map Activity gives it a location students can explore and remember.
   </Card>

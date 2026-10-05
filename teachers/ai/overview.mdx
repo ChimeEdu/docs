@@ -4,30 +4,31 @@ sidebarTitle: "Overview"
 description: "ChimeEdu's AI drafts study guides from your prompt and uploaded source material — powered by Claude, available on Premium."
 ---
 
-ChimeEdu includes one optional AI tool: **AI-assisted Study Guide drafting**. You describe what you need, optionally upload source material, and the AI drafts headings and sections into your study guide — which you then edit before students see it.
+ChimeEdu includes two optional AI tools: **AI-assisted Study Guide drafting** and the **ChimeEdu AI Creation Assistant**. Both work the same way at heart — you describe what you need, optionally attach source material, and the AI produces a draft that you review and control.
 
 <Note>
-  AI drafting requires a **Premium** account (Administrator and Super Administrator accounts also have access). It is powered by Claude. [View pricing](https://app.chimeedu.com/pricing) to compare plans.
+  AI tools require a **Premium** account (Administrator and Super Administrator accounts also have access). They are powered by Claude. [View pricing](https://app.chimeedu.com/pricing) to compare plans.
 </Note>
 
 ## What's available today
 
 <CardGroup cols={1}>
+  <Card title="ChimeEdu AI Creation Assistant" icon="wand-magic-sparkles" href="/teachers/ai/creation-assistant">
+    Describe an activity in plain language — "make a flash card deck from this file" — and the assistant drafts it for your review: flash cards, quizzes, fill-in-the-blank, timelines, flow chart diagrams, maps, compass graphs, assessments, experiences, and classrooms.
+  </Card>
+
   <Card title="Study Guide Drafting" icon="book-open" href="/teachers/ai/study-guide-drafting">
     Describe the guide you want, optionally upload notes or curriculum files, and watch the draft stream into your study guide section by section.
   </Card>
 </CardGroup>
 
-Study guides are the only place AI authoring is available. Quizzes, maps, timelines, flash cards, fill-in-the-blank activities, and assessments are all authored manually — there is no AI question generation or blank suggestion on ChimeEdu today.
+## How the two tools differ
 
-## How it works in practice
-
-* **It works from your prompt, and from files if you add them.** You can write a prompt on its own ("Create a study guide on the water cycle for 8th grade"), or upload source material for the AI to work from — up to 50,000 characters per file and 500,000 characters in total. Because a prompt alone is enough, the AI can and will generate content that wasn't in any source you provided. Read the draft before you rely on it.
-* **The draft lands directly in your study guide.** Generated sections are saved into the guide as they complete — there is no separate "pending draft" you approve first. You can append to existing content, replace it, or regenerate an individual section.
-* **Watch out on already-published guides.** If the guide is published and linked to a classroom, saved AI content is visible to students immediately. Draft in an unpublished guide first if you want a review step.
-* **There is a usage limit.** Ten generations per hour, per account. Your remaining quota is shown in the AI panel.
-* **AI is always optional.** Every study guide can be written, formatted, and published entirely by hand.
+- **The Creation Assistant proposes; you approve.** It always shows you a preview — the title, item counts, sample content, and which of your materials it used — and nothing is created until you click **Create it**. Discarded drafts leave nothing behind.
+- **Study Guide drafting saves as it writes.** Generated sections land directly in your guide as they complete. If the guide is published and linked to a classroom, saved AI content is visible to students immediately — draft in an unpublished guide first if you want a review step.
+- **Separate usage limits.** Study Guide drafting allows ten generations per hour. The Creation Assistant allows five generations per day and twenty per month, with one free refinement per draft. Both meters appear in **Account Settings → AI Usage**, and the Creation Assistant's daily meter also appears on your dashboard.
+- **AI is always optional.** Everything either tool can make can also be authored entirely by hand.
 
 ## Privacy and your content
 
-The prompt and any files you upload are sent to Anthropic's Claude API to generate your draft. ChimeEdu does **not** keep the material you submit — the usage log records only metadata (the model used, token counts, and whether the request succeeded). The generated content is stored, because it is saved into your study guide by design. Your most recent prompt is also kept in your browser's session storage so the panel can restore it if you reload the page.
+Your prompt and any files you attach are sent to Anthropic's Claude API to generate your draft. ChimeEdu does **not** keep the material you submit — the usage log records only metadata (the model used, token counts, and whether the request succeeded). Google Drive files you pick are read transiently for that request only and never stored. Generated content is kept only when it is saved into a study guide or created as an activity by design. Attached files are treated strictly as reference material — the AI is instructed to draw factual content only from what you provide and to ignore anything in a file that looks like instructions.
