@@ -32,7 +32,8 @@
               "teachers/create-account",
               "teachers/account-security",
               "teachers/plans-and-pricing",
-              "teachers/billing-and-subscriptions"
+              "teachers/billing-and-subscriptions",
+              "teachers/search-and-create"
             ]
           },
           {
@@ -41,6 +42,10 @@
               "teachers/classrooms/overview",
               "teachers/classrooms/create-classroom",
               "teachers/classrooms/enroll-students",
+              "teachers/classrooms/import-roster",
+              "teachers/classrooms/archive-a-classroom",
+              "teachers/classrooms/schedule-and-announce",
+              "teachers/classrooms/gradebook",
               "teachers/classrooms/google-drive"
             ]
           },
@@ -55,13 +60,22 @@
               "teachers/activities/graphs-and-charts",
               "teachers/activities/diagrams",
               "teachers/activities/quick-activities",
-              "teachers/activities/issuance"
+              "teachers/activities/issuance",
+              "teachers/activities/several-classes",
+              "teachers/activities/per-class-dates",
+              "teachers/activities/map-class-layers",
+              "teachers/activities/graded-mode",
+              "teachers/activities/archive-and-restore",
+              "teachers/institution-library",
+              "teachers/standards",
+              "teachers/bring-your-school"
             ]
           },
           {
             "group": "Assessments & Guides",
             "pages": [
               "teachers/assessments",
+              "teachers/assessments/import-questions",
               "teachers/study-guides",
               "teachers/experiences"
             ]
@@ -70,7 +84,8 @@
             "group": "AI Tools",
             "pages": [
               "teachers/ai/overview",
-              "teachers/ai/study-guide-drafting"
+              "teachers/ai/study-guide-drafting",
+              "teachers/ai/creation-assistant"
             ]
           }
         ]
@@ -83,6 +98,7 @@
             "pages": [
               "students/introduction",
               "students/create-account",
+              "students/sign-in-with-a-username",
               "students/join-classroom"
             ]
           },
@@ -94,7 +110,45 @@
               "students/timelines-and-flash-cards",
               "students/using-diagrams",
               "students/assessments",
+              "students/graded-activities",
               "students/experiences"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "For Institution Staff",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "staff/introduction",
+              "staff/setup-guide"
+            ]
+          },
+          {
+            "group": "People",
+            "pages": [
+              "staff/members-and-invitations",
+              "staff/teachers-and-students",
+              "staff/reassign-content"
+            ]
+          },
+          {
+            "group": "Institution",
+            "pages": [
+              "staff/verify-your-institution",
+              "staff/campuses",
+              "staff/performance-and-adoption",
+              "staff/activity-log",
+              "staff/resource-library",
+              "staff/settings-and-branding"
+            ]
+          },
+          {
+            "group": "IT",
+            "pages": [
+              "staff/it-and-network"
             ]
           }
         ]
@@ -113,6 +167,8 @@
             "group": "Troubleshooting",
             "pages": [
               "help/account-and-login",
+              "help/sign-in-with-a-link",
+              "help/sign-in-with-google",
               "help/activities-and-quizzes",
               "help/accessibility",
               "help/google-drive-picker"

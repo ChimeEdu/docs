@@ -10,21 +10,84 @@ A ChimeEdu quiz is a **live, teacher-hosted game**. You project the host screen,
   Live quizzes are designed for the room, not the record book. **No quiz results are saved** — not for guests, and not for signed-in students. Scores exist only for the duration of the session and disappear when you close the host tab. If you need results you can review later, use an [assessment](/teachers/assessments) instead.
 </Warning>
 
+## Try it live
+
+Open a real quiz as a visitor — play it solo, or host a live round and join it from a second device. Nothing you do is saved. Every example is a real activity in read-only mode, no account needed.
+
+<CardGroup cols={2}>
+  <Card title="Our Solar System" icon="play" href="https://app.chimeedu.com/examples/quiz">
+    Ten questions across multiple choice, true/false and multi-select. Host it or play it.
+  </Card>
+  <Card title="All live examples" icon="grid-2" href="https://chimeedu.com/features/examples">
+    One example for every activity type, with more on the way.
+  </Card>
+</CardGroup>
+
 ## Building a quiz
 
 <Steps>
   <Step title="Create the activity">
-    From your dashboard choose **New Activity**, then **Quiz**. Give it a title, and either pick a classroom from the dropdown or leave it as a temporary activity (temporary activities expire after 8 hours and don't count toward your plan limit).
+    From your dashboard choose **New Activity**, then **Quiz**. Give it a title, and either tick one or more classrooms or leave it as a temporary activity (a temporary activity moves to your Archived list after 8 hours, and counts toward your plan's activity limit while it's active).
   </Step>
 
   <Step title="Add your questions">
-    Quiz questions come in two types: **multiple choice** and **true/false**. Multiple choice supports more than one correct answer — students tick every option they think is right.
+    Quiz questions come in four types:
+
+    * **Multiple choice** — one correct answer; players tap one card.
+    * **True/false**.
+    * **Multi-select** — several correct answers; players tick every card they think is right, then submit. It scores only when their set matches exactly.
+    * **Image** — a large picture with your question underneath, answered like multiple choice. See [Image questions](#image-questions).
+
+    Multiple choice and Image questions can also be answered by **typing** instead of tapping a card — see [Type it in answers](#type-it-in-answers).
+
+    You can also bring questions in from a spreadsheet, a Kahoot export, pasted text or another quiz with **Import questions** — see [Import Questions](/teachers/assessments/import-questions). Imported questions arrive as tap-a-card questions; add pictures and typed answers in the editor afterwards.
   </Step>
 
   <Step title="Set timing and scoring per question">
-    Each question carries its own countdown (30 seconds by default) and its own point value (100 by default). Adjust them question by question — a quick recall question and a think-it-through question don't deserve the same clock.
+    Each question carries its own countdown (30 seconds by default) and its own point value (100 by default). Adjust them question by question — a quick recall question and a think-it-through question don't deserve the same clock. When you switch a question to **Type it in**, a 30-second timer you haven't changed becomes 45 seconds, because typing takes longer than tapping.
   </Step>
 </Steps>
+
+## Image questions
+
+An Image question puts a picture front and centre — a map, a painting, a graph, a specimen — with your question and the answer cards alongside it. Write the question so it refers to the picture ("Which country is highlighted?", "What is this organ called?").
+
+In the question editor, choose **Image** as the question type, then:
+
+1. **Add the picture.** Choose **Upload** (JPEG, PNG, GIF or WebP, up to 10 MB) or paste an image link that starts with `https://`.
+2. **Describe it.** **Image description (alt text)** is required. Describe what students need to see to answer — screen readers read it aloud, and it appears in place of the picture if the picture can't load.
+3. **Add your answer cards** and mark the correct one, just like multiple choice.
+
+Image questions score exactly like multiple choice. On the projector and on students' devices, the picture, the question and the answers stay on screen together. Anyone can select the picture to see it full size, then close it to get back to the answers.
+
+<Note>
+  You need to be signed in to add pictures. The quick no-account quiz maker (Quick Activity) offers multiple choice and true/false only, although it plays any question.
+</Note>
+
+## Type it in answers
+
+With **Type it in**, students type their answer instead of choosing from cards. It works on **multiple choice** and **Image** questions.
+
+In the question editor, set **Answer type** to **Type it in**, then:
+
+1. **Answer** — the main correct answer. This is the one the whole class sees when you reveal the results.
+2. **Also accept** (optional) — up to 10 other answers that count as correct, such as an abbreviation, a different spelling, or "USA" as well as "United States".
+
+### How typed answers are marked
+
+ChimeEdu marks each answer the moment a student locks it in, using the same forgiving matching as Fill in the Blank:
+
+* **Capital letters, accents, apostrophes, punctuation and extra spaces don't matter.** "Saint-Étienne" and "saint etienne" are the same answer.
+* **A close spelling earns 75% of the points.** A one-letter slip on a longer word ("photosynthsis") is a near miss, not a wrong answer.
+* **Numbers must be exact.** 3.14 doesn't match 314, and −5 doesn't match 5. Small forms are treated as equal, like .5 and 0.5, or 1,000 and 1000.
+* **Short answers and answers with digits get no near-miss credit.** An answer shorter than 4 characters, or one containing a number, has to match exactly — otherwise "Na" would pass for "Ne".
+
+<Tip>
+  Letters next to numbers are matched loosely, so "COVID-19" and "covid19" are the same answer — and so are `x-5` and `x5`. If that difference is the point of the question, use answer cards instead of Type it in.
+</Tip>
+
+Only a student's first locked-in answer counts. Students never see what classmates typed. When you reveal the results, everyone sees your main answer, and each student sees their own result on their device.
+
 
 ## Hosting a session
 
@@ -43,6 +106,8 @@ A ChimeEdu quiz is a **live, teacher-hosted game**. You project the host screen,
 
   <Step title="Run each question">
     Students answer on their devices while the timer runs. When you choose **Show Results**, everyone sees whether they were right, the correct answer is revealed, and the leaderboard updates on your screen. (If the timer runs out first, results are revealed automatically.)
+
+    For a **Type it in** question, your screen shows "Students type their answer on their device" and how many have answered, instead of answer cards. The reveal shows your main answer.
   </Step>
 
   <Step title="Move on">
@@ -81,6 +146,12 @@ A ChimeEdu quiz is a **live, teacher-hosted game**. You project the host screen,
 
 Quizzes have an **accommodation mode** you can enable on the activity. It multiplies every question's timer by three — for the whole room, not per student. Use it for classes where extra processing time is appropriate; for individual extended time, an assessment is the better tool.
 
+A few things work for every student without any setup:
+
+* **Screen readers announce each new question** on students' devices. For an Image question, they also read your image description.
+* **Pictures can be opened full size** from the keyboard or by touch, and closed with **Escape**.
+* **Typed answers forgive spelling slips** with partial credit, so a student who knows the answer but can't spell it perfectly still scores.
+
 ## Frequently asked
 
 <AccordionGroup>
@@ -97,6 +168,6 @@ Quizzes have an **accommodation mode** you can enable on the activity. It multip
   </Accordion>
 
   <Accordion title="Do quizzes count toward my plan limit?">
-    Permanent quizzes count toward your activity limit. Temporary ones don't.
+    Quizzes count toward your activity limit, including temporary ones while they're active. After 8 hours a temporary quiz moves to your Archived list, where you can restore it as an ordinary quiz.
   </Accordion>
 </AccordionGroup>
