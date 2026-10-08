@@ -2,10 +2,10 @@
   "$schema": "https://mintlify.com/docs.json",
   "name": "ChimeEdu Help Center",
   "theme": "almond",
-  "favicon": "https://media.brand.dev/6d2ec165-ea36-4c23-ac2f-00544cd5d33d.png",
+  "favicon": "/images/chimeedu-favicon.png",
   "logo": {
-    "light": "/images/chimeedu-mark-onlight-1024(1).png",
-    "dark": "/images/chimeedu-mark-ondark-1024(1).png",
+    "light": "/images/chimeedu-logo-light.svg",
+    "dark": "/images/chimeedu-logo-dark.svg",
     "href": "https://help.chimeedu.com"
   },
   "colors": {
